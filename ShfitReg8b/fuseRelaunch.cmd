@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/Verilog/ShfitReg8b/ShfitReg8b_TEST_isim_beh.exe" -prj "Y:/Verilog/ShfitReg8b/ShfitReg8b_TEST_beh.prj" "work.ShfitReg8b_TEST" "work.glbl" 

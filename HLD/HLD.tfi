@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+HLD instance_name (
+    .A(A), 
+    .B(B), 
+    .C(C), 
+    .D(D), 
+    .GNS(GNS), 
+    .YNS(YNS), 
+    .RNS(RNS), 
+    .GEW(GEW), 
+    .YEW(YEW), 
+    .REW(REW)
+    );
+
+

@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "Z:/Projects/Verilog/D_74LS138_TEST/D_74LS138_TEST.xst" -ofn "Z:/Projects/Verilog/D_74LS138_TEST/D_74LS138_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 D_74LS138_TEST.ngc D_74LS138_TEST.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o D_74LS138_TEST_map.ncd D_74LS138_TEST.ngd D_74LS138_TEST.pcf 
+par -w -intstyle ise -ol high -mt off D_74LS138_TEST_map.ncd D_74LS138_TEST.ncd D_74LS138_TEST.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml D_74LS138_TEST.twx D_74LS138_TEST.ncd -o D_74LS138_TEST.twr D_74LS138_TEST.pcf 
+bitgen -intstyle ise -f D_74LS138_TEST.ut D_74LS138_TEST.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-1 D_74LS138_TEST.ngc D_74LS138_TEST.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o D_74LS138_TEST_map.ncd D_74LS138_TEST.ngd D_74LS138_TEST.pcf 
+par -w -intstyle ise -ol high -mt off D_74LS138_TEST_map.ncd D_74LS138_TEST.ncd D_74LS138_TEST.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml D_74LS138_TEST.twx D_74LS138_TEST.ncd -o D_74LS138_TEST.twr D_74LS138_TEST.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f D_74LS138_TEST.ut D_74LS138_TEST.ncd 

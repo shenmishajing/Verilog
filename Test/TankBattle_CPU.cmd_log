@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "Z:/Verilog/Test/TankBattle_CPU.xst" -ofn "Z:/Verilog/Test/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/Test/TankBattle_CPU.xst" -ofn "Z:/Verilog/Test/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/Test/TankBattle_CPU.xst" -ofn "Z:/Verilog/Test/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/Test/TankBattle_CPU.xst" -ofn "Z:/Verilog/Test/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/Test/TankBattle_CPU.xst" -ofn "Z:/Verilog/Test/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/Test/TankBattle_CPU.xst" -ofn "Z:/Verilog/Test/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/Test/TankBattle_CPU.xst" -ofn "Z:/Verilog/Test/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  

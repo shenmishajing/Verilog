@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "C:/Users/CST/Documents/Tencent Files/1098171492/FileRecv/OExp11-OwnMCPU/OExp11_OwnMCPU.xst" -ofn "C:/Users/CST/Documents/Tencent Files/1098171492/FileRecv/OExp11-OwnMCPU/OExp11_OwnMCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L "OExp11_OwnMCPU.ngc" OExp11_OwnMCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ngd OExp11_OwnMCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ncd OExp11_OwnMCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp11_OwnMCPU.twx OExp11_OwnMCPU.ncd -o OExp11_OwnMCPU.twr OExp11_OwnMCPU.pcf 
+bitgen -intstyle ise -f OExp11_OwnMCPU.ut OExp11_OwnMCPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L "OExp11_OwnMCPU.ngc" OExp11_OwnMCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ngd OExp11_OwnMCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ncd OExp11_OwnMCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp11_OwnMCPU.twx OExp11_OwnMCPU.ncd -o OExp11_OwnMCPU.twr OExp11_OwnMCPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp11_OwnMCPU.ut OExp11_OwnMCPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp11-OwnMCPU/OExp11_OwnMCPU.xst" -ofn "Z:/Verilog/OExp11-OwnMCPU/OExp11_OwnMCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp11_OwnMCPU.ngc OExp11_OwnMCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ngd OExp11_OwnMCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ncd OExp11_OwnMCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp11_OwnMCPU.twx OExp11_OwnMCPU.ncd -o OExp11_OwnMCPU.twr OExp11_OwnMCPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp11_OwnMCPU.ut OExp11_OwnMCPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp11-OwnMCPU/OExp11_OwnMCPU.xst" -ofn "Z:/Verilog/OExp11-OwnMCPU/OExp11_OwnMCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp11_OwnMCPU.ngc OExp11_OwnMCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ngd OExp11_OwnMCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ncd OExp11_OwnMCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp11_OwnMCPU.twx OExp11_OwnMCPU.ncd -o OExp11_OwnMCPU.twr OExp11_OwnMCPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp11_OwnMCPU.ut OExp11_OwnMCPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp11-OwnMCPU/OExp11_OwnMCPU.xst" -ofn "Z:/Verilog/OExp11-OwnMCPU/OExp11_OwnMCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp11_OwnMCPU.ngc OExp11_OwnMCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ngd OExp11_OwnMCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp11_OwnMCPU_map.ncd OExp11_OwnMCPU.ncd OExp11_OwnMCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp11_OwnMCPU.twx OExp11_OwnMCPU.ncd -o OExp11_OwnMCPU.twr OExp11_OwnMCPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp11_OwnMCPU.ut OExp11_OwnMCPU.ncd 

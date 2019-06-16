@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "Z:/Verilog/Element/and32.xst" -ofn "Z:/Verilog/Element/and32.syr" 

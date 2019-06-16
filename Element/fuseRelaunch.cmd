@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/Verilog/Element/ADC32_Test_isim_beh.exe" -prj "Z:/Verilog/Element/ADC32_Test_beh.prj" "work.ADC32_Test" "work.glbl" 

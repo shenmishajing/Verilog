@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\Verilog\OExp05-DataPath\OExp05_DataPath.ncd
+OUTFILE=Z:\Verilog\OExp05-DataPath\OExp05_DataPath.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=Z:\Verilog\OExp05-DataPath
+LICENSE=WebPack
+USER_INFO=__0_0_0

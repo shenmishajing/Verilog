@@ -1,0 +1,48 @@
+xst -intstyle ise -ifn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.xst" -ofn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L OExp04_IP2CPU.ngc OExp04_IP2CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ngd OExp04_IP2CPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ncd OExp04_IP2CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp04_IP2CPU.twx OExp04_IP2CPU.ncd -o OExp04_IP2CPU.twr OExp04_IP2CPU.pcf 
+bitgen -intstyle ise -f OExp04_IP2CPU.ut OExp04_IP2CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.xst" -ofn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp04_IP2CPU.ngc OExp04_IP2CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ngd OExp04_IP2CPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ncd OExp04_IP2CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp04_IP2CPU.twx OExp04_IP2CPU.ncd -o OExp04_IP2CPU.twr OExp04_IP2CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp04_IP2CPU.ut OExp04_IP2CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.xst" -ofn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.xst" -ofn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp04_IP2CPU.ngc OExp04_IP2CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ngd OExp04_IP2CPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ncd OExp04_IP2CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp04_IP2CPU.twx OExp04_IP2CPU.ncd -o OExp04_IP2CPU.twr OExp04_IP2CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp04_IP2CPU.ut OExp04_IP2CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.xst" -ofn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp04_IP2CPU.ngc OExp04_IP2CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ngd OExp04_IP2CPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ncd OExp04_IP2CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp04_IP2CPU.twx OExp04_IP2CPU.ncd -o OExp04_IP2CPU.twr OExp04_IP2CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp04_IP2CPU.ut OExp04_IP2CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.xst" -ofn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp04_IP2CPU.ngc OExp04_IP2CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ngd OExp04_IP2CPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ncd OExp04_IP2CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp04_IP2CPU.twx OExp04_IP2CPU.ncd -o OExp04_IP2CPU.twr OExp04_IP2CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp04_IP2CPU.ut OExp04_IP2CPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp04_IP2CPU.ngc OExp04_IP2CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ngd OExp04_IP2CPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ncd OExp04_IP2CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp04_IP2CPU.twx OExp04_IP2CPU.ncd -o OExp04_IP2CPU.twr OExp04_IP2CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp04_IP2CPU.ut OExp04_IP2CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.xst" -ofn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp04_IP2CPU.ngc OExp04_IP2CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ngd OExp04_IP2CPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ncd OExp04_IP2CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp04_IP2CPU.twx OExp04_IP2CPU.ncd -o OExp04_IP2CPU.twr OExp04_IP2CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp04_IP2CPU.ut OExp04_IP2CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.xst" -ofn "Z:/Verilog/OExp04-IP2CPU/OExp04_IP2CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp04_IP2CPU.ngc OExp04_IP2CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ngd OExp04_IP2CPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp04_IP2CPU_map.ncd OExp04_IP2CPU.ncd OExp04_IP2CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp04_IP2CPU.twx OExp04_IP2CPU.ncd -o OExp04_IP2CPU.twr OExp04_IP2CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp04_IP2CPU.ut OExp04_IP2CPU.ncd 

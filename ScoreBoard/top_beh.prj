@@ -1,0 +1,7 @@
+verilog work "MyMC14495.vf"
+verilog work "dispsync.v"
+verilog work "clkdiv.v"
+verilog work "disp_num.vf"
+verilog work "CreatNumber.v"
+verilog work "top.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=Z:\Projects\Verilog\ScoreBoard\impact.xsl
+OUTFILE=Z:\Projects\Verilog\ScoreBoard\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=Z:\Projects\Verilog\ScoreBoard
+LICENSE=iMPACT
+USER_INFO=iMPACT

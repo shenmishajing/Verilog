@@ -1,0 +1,5 @@
+MODULE SCPU
+	SUBMODULE SCPU_ctrl
+		INSTANCE Controler
+	SUBMODULE Data_path
+		INSTANCE DataPath

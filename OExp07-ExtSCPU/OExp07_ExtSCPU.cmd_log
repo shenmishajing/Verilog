@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp07_ExtSCPU.twx OExp07_ExtSCPU.ncd -o OExp07_ExtSCPU.twr OExp07_ExtSCPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "Z:/Verilog/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp07_ExtSCPU.twx OExp07_ExtSCPU.ncd -o OExp07_ExtSCPU.twr OExp07_ExtSCPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 

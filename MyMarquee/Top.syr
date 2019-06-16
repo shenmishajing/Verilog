@@ -1,0 +1,1071 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\MyMC14495.vf" into library work
+Parsing module <MyMC14495>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\D_FLIPFLOP.vf" into library work
+Parsing module <D_FLIPFLOP>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\dispsync.v" into library work
+Parsing module <dispsync>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\clk_1ms.v" into library work
+Parsing module <clk_1ms>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" into library work
+Parsing module <ShfitReg8b>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\pbdebounce.v" into library work
+Parsing module <pbdebounce>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\disp_num.vf" into library work
+Parsing module <disp_num>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\CreatNumber.v" into library work
+Parsing module <CreatNumber>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\clk_1s.v" into library work
+Parsing module <counter_1s>.
+Analyzing Verilog file "\\mac\sharefiles\Projects\Verilog\MyMarquee\Top.v" into library work
+Parsing module <Top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Top>.
+
+Elaborating module <pbdebounce>.
+
+Elaborating module <clk_1ms>.
+
+Elaborating module <CreatNumber>.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\Top.v" Line 36: Size mismatch in connection of port <num>. Formal port size is 16-bit while actual signal size is 8-bit.
+
+Elaborating module <counter_1s>.
+WARNING:HDLCompiler:1016 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 38: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 39: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 40: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 41: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 42: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 43: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 44: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 45: Port Qbar is not connected to this instance
+
+Elaborating module <ShfitReg8b>.
+
+Elaborating module <D_FLIPFLOP>.
+
+Elaborating module <NAND3>.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 38: Size mismatch in connection of port <Rbar>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 39: Size mismatch in connection of port <Rbar>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 40: Size mismatch in connection of port <Rbar>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 41: Size mismatch in connection of port <Rbar>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 42: Size mismatch in connection of port <Rbar>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 43: Size mismatch in connection of port <Rbar>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 44: Size mismatch in connection of port <Rbar>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" Line 45: Size mismatch in connection of port <Rbar>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <disp_num>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <MyMC14495>.
+
+Elaborating module <AND4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR3>.
+
+Elaborating module <OR4>.
+
+Elaborating module <OR2>.
+
+Elaborating module <dispsync>.
+WARNING:HDLCompiler:189 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\Top.v" Line 44: Size mismatch in connection of port <rst>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\Top.v".
+    Summary:
+	no macro.
+Unit <Top> synthesized.
+
+Synthesizing Unit <pbdebounce>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\pbdebounce.v".
+    Found 1-bit register for signal <pbreg>.
+    Found 7-bit register for signal <pbshift<6:0>>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <pbdebounce> synthesized.
+
+Synthesizing Unit <clk_1ms>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\clk_1ms.v".
+    Found 1-bit register for signal <clk_1s>.
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit adder for signal <cnt[31]_GND_3_o_add_2_OUT> created at line 27.
+    Found 32-bit comparator greater for signal <cnt[31]_GND_3_o_LessThan_2_o> created at line 26
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clk_1ms> synthesized.
+
+Synthesizing Unit <CreatNumber>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\CreatNumber.v".
+    Found 1-bit register for signal <num<2>>.
+    Found 1-bit register for signal <num<1>>.
+    Found 1-bit register for signal <num<0>>.
+    Found 1-bit register for signal <num<7>>.
+    Found 1-bit register for signal <num<6>>.
+    Found 1-bit register for signal <num<5>>.
+    Found 1-bit register for signal <num<4>>.
+    Found 1-bit register for signal <num<11>>.
+    Found 1-bit register for signal <num<10>>.
+    Found 1-bit register for signal <num<9>>.
+    Found 1-bit register for signal <num<8>>.
+    Found 1-bit register for signal <num<15>>.
+    Found 1-bit register for signal <num<14>>.
+    Found 1-bit register for signal <num<13>>.
+    Found 1-bit register for signal <num<12>>.
+    Found 1-bit register for signal <num<3>>.
+    Found 4-bit adder for signal <A> created at line 30.
+    Found 4-bit adder for signal <B> created at line 31.
+    Found 4-bit adder for signal <C> created at line 32.
+    Found 4-bit adder for signal <D> created at line 33.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <CreatNumber> synthesized.
+
+Synthesizing Unit <counter_1s>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\clk_1s.v".
+    Found 1-bit register for signal <clk_1s>.
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit adder for signal <cnt[31]_GND_5_o_add_2_OUT> created at line 27.
+    Found 32-bit comparator greater for signal <cnt[31]_GND_5_o_LessThan_2_o> created at line 26
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <counter_1s> synthesized.
+
+Synthesizing Unit <ShfitReg8b>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v".
+INFO:Xst:3210 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" line 38: Output port <Qbar> of the instance <D_FLIPFLOP0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" line 39: Output port <Qbar> of the instance <D_FLIPFLOP1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" line 40: Output port <Qbar> of the instance <D_FLIPFLOP2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" line 41: Output port <Qbar> of the instance <D_FLIPFLOP3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" line 42: Output port <Qbar> of the instance <D_FLIPFLOP4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" line 43: Output port <Qbar> of the instance <D_FLIPFLOP5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" line 44: Output port <Qbar> of the instance <D_FLIPFLOP6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\sharefiles\Projects\Verilog\MyMarquee\ShfitReg8b.v" line 45: Output port <Qbar> of the instance <D_FLIPFLOP7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ShfitReg8b> synthesized.
+
+Synthesizing Unit <D_FLIPFLOP>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\D_FLIPFLOP.vf".
+    Summary:
+	no macro.
+Unit <D_FLIPFLOP> synthesized.
+
+Synthesizing Unit <disp_num>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\disp_num.vf".
+    Summary:
+	no macro.
+Unit <disp_num> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_10_o_add_0_OUT> created at line 28.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <MyMC14495>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\MyMC14495.vf".
+    Summary:
+	no macro.
+Unit <MyMC14495> synthesized.
+
+Synthesizing Unit <dispsync>.
+    Related source file is "\\mac\sharefiles\Projects\Verilog\MyMarquee\dispsync.v".
+    Found 4x4-bit Read Only RAM for signal <AN>
+    Found 4-bit 4-to-1 multiplexer for signal <Hex> created at line 31.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <dispsync> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 8
+ 32-bit adder                                          : 4
+ 4-bit adder                                           : 4
+# Registers                                            : 15
+ 1-bit register                                        : 5
+ 32-bit register                                       : 4
+ 4-bit register                                        : 4
+ 7-bit register                                        : 2
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CreatNumber>.
+The following registers are absorbed into counter <num<3:0>>: 1 register on signal <num<3:0>>.
+The following registers are absorbed into counter <num<4>_num<5>_num<6>_num<7>>: 1 register on signal <num<4>_num<5>_num<6>_num<7>>.
+The following registers are absorbed into counter <num<8>_num<9>_num<10>_num<11>>: 1 register on signal <num<8>_num<9>_num<10>_num<11>>.
+The following registers are absorbed into counter <num<12>_num<13>_num<14>_num<15>>: 1 register on signal <num<12>_num<13>_num<14>_num<15>>.
+Unit <CreatNumber> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_1ms>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <clk_1ms> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_1s>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <counter_1s> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dispsync>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_AN> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Scan>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <AN>            |          |
+    -----------------------------------------------------------------------
+Unit <dispsync> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 8
+ 32-bit up counter                                     : 4
+ 4-bit up counter                                      : 4
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_19> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_20> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_21> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_22> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_23> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_24> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_25> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_26> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_27> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_28> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_29> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_30> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <disp_num0/XLXI_1/clkdiv_31> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2170 - Unit ShfitReg8b : the following signal(s) form a combinatorial loop: D_FLIPFLOP7/Qbar_DUMMY, D_FLIPFLOP7/XLXN_13, Q<7>, D_FLIPFLOP7/XLXN_9.
+WARNING:Xst:2170 - Unit ShfitReg8b : the following signal(s) form a combinatorial loop: D_FLIPFLOP6/XLXN_9, D_FLIPFLOP6/XLXN_13, D_FLIPFLOP6/Qbar_DUMMY, Q<6>.
+WARNING:Xst:2170 - Unit ShfitReg8b : the following signal(s) form a combinatorial loop: D_FLIPFLOP5/Qbar_DUMMY, D_FLIPFLOP5/XLXN_9, D_FLIPFLOP5/XLXN_13, Q<5>.
+WARNING:Xst:2170 - Unit ShfitReg8b : the following signal(s) form a combinatorial loop: D_FLIPFLOP4/Qbar_DUMMY, D_FLIPFLOP4/XLXN_13, Q<4>, D_FLIPFLOP4/XLXN_9.
+WARNING:Xst:2170 - Unit ShfitReg8b : the following signal(s) form a combinatorial loop: D_FLIPFLOP3/XLXN_13, D_FLIPFLOP3/Qbar_DUMMY, D_FLIPFLOP3/XLXN_9, Q<3>.
+WARNING:Xst:2170 - Unit ShfitReg8b : the following signal(s) form a combinatorial loop: D_FLIPFLOP2/XLXN_9, D_FLIPFLOP2/Qbar_DUMMY, Q<2>, D_FLIPFLOP2/XLXN_13.
+WARNING:Xst:2170 - Unit ShfitReg8b : the following signal(s) form a combinatorial loop: D_FLIPFLOP1/XLXN_9, Q<1>, D_FLIPFLOP1/Qbar_DUMMY, D_FLIPFLOP1/XLXN_13.
+WARNING:Xst:2170 - Unit ShfitReg8b : the following signal(s) form a combinatorial loop: Q<0>, D_FLIPFLOP0/Qbar_DUMMY, D_FLIPFLOP0/XLXN_13, D_FLIPFLOP0/XLXN_9.
+
+Optimizing unit <MyMC14495> ...
+
+Optimizing unit <Top> ...
+
+Optimizing unit <pbdebounce> ...
+
+Optimizing unit <ShfitReg8b> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 142
+ Flip-Flops                                            : 142
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 468
+#      AND2                        : 1
+#      AND3                        : 11
+#      AND4                        : 9
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 111
+#      LUT2                        : 9
+#      LUT3                        : 18
+#      LUT4                        : 8
+#      LUT5                        : 21
+#      LUT6                        : 10
+#      MUXCY                       : 128
+#      OR2                         : 7
+#      OR3                         : 3
+#      OR4                         : 4
+#      VCC                         : 1
+#      XORCY                       : 115
+# FlipFlops/Latches                : 142
+#      FD                          : 46
+#      FDR                         : 96
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 5
+#      OBUF                        : 20
+# Logical                          : 48
+#      NAND3                       : 48
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             142  out of  202800     0%  
+ Number of Slice LUTs:                  188  out of  101400     0%  
+    Number used as Logic:               188  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    199
+   Number with an unused Flip Flop:      57  out of    199    28%  
+   Number with an unused LUT:            11  out of    199     5%  
+   Number of fully used LUT-FF pairs:   131  out of    199    65%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    400     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                           | Load  |
+-----------------------------------+-------------------------------------------------+-------+
+clk                                | BUFGP                                           | 118   |
+pbdebounce1/pbreg                  | NONE(CreatNumber0/num<4>_num<5>_num<6>_num<7>_3)| 4     |
+pbdebounce0/pbreg                  | NONE(CreatNumber0/num<3:0>_3)                   | 4     |
+pbdebounce1/clk_1ms0/clk_1s        | NONE(pbdebounce1/pbshift_6)                     | 8     |
+pbdebounce0/clk_1ms0/clk_1s        | NONE(pbdebounce0/pbshift_6)                     | 8     |
+-----------------------------------+-------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.506ns (Maximum Frequency: 399.082MHz)
+   Minimum input arrival time before clock: 1.612ns
+   Maximum output required time after clock: 46.931ns
+   Maximum combinational path delay: 46.792ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.506ns (frequency: 399.082MHz)
+  Total number of paths / destination ports: 6595 / 214
+-------------------------------------------------------------------------
+Delay:               2.506ns (Levels of Logic = 7)
+  Source:            pbdebounce1/clk_1ms0/cnt_5 (FF)
+  Destination:       pbdebounce1/clk_1ms0/cnt_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pbdebounce1/clk_1ms0/cnt_5 to pbdebounce1/clk_1ms0/cnt_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.282   0.739  pbdebounce1/clk_1ms0/cnt_5 (pbdebounce1/clk_1ms0/cnt_5)
+     LUT5:I0->O            1   0.053   0.000  pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_lut<0> (pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<0> (pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<1> (pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<2> (pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<3> (pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<4> (pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<4>)
+     MUXCY:CI->O          33   0.204   0.552  pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<5> (pbdebounce1/clk_1ms0/Mcompar_cnt[31]_GND_3_o_LessThan_2_o_cy<5>)
+     FDR:R                     0.325          pbdebounce1/clk_1ms0/cnt_0
+    ----------------------------------------
+    Total                      2.506ns (1.215ns logic, 1.291ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pbdebounce1/pbreg'
+  Clock period: 1.191ns (frequency: 839.630MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.191ns (Levels of Logic = 1)
+  Source:            CreatNumber0/num<4>_num<5>_num<6>_num<7>_3 (FF)
+  Destination:       CreatNumber0/num<4>_num<5>_num<6>_num<7>_3 (FF)
+  Source Clock:      pbdebounce1/pbreg rising
+  Destination Clock: pbdebounce1/pbreg rising
+
+  Data Path: CreatNumber0/num<4>_num<5>_num<6>_num<7>_3 to CreatNumber0/num<4>_num<5>_num<6>_num<7>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.282   0.432  CreatNumber0/num<4>_num<5>_num<6>_num<7>_3 (CreatNumber0/num<4>_num<5>_num<6>_num<7>_3)
+     INV:I->O              1   0.067   0.399  CreatNumber0/Mcount_num<4>_num<5>_num<6>_num<7>_xor<0>11_INV_0 (Result<0>2)
+     FD:D                      0.011          CreatNumber0/num<4>_num<5>_num<6>_num<7>_3
+    ----------------------------------------
+    Total                      1.191ns (0.360ns logic, 0.831ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pbdebounce0/pbreg'
+  Clock period: 1.191ns (frequency: 839.630MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.191ns (Levels of Logic = 1)
+  Source:            CreatNumber0/num<3:0>_3 (FF)
+  Destination:       CreatNumber0/num<3:0>_3 (FF)
+  Source Clock:      pbdebounce0/pbreg rising
+  Destination Clock: pbdebounce0/pbreg rising
+
+  Data Path: CreatNumber0/num<3:0>_3 to CreatNumber0/num<3:0>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.282   0.432  CreatNumber0/num<3:0>_3 (CreatNumber0/num<3:0>_3)
+     INV:I->O              1   0.067   0.399  CreatNumber0/Mcount_num<3:0>_xor<0>11_INV_0 (Result<0>3)
+     FD:D                      0.011          CreatNumber0/num<3:0>_3
+    ----------------------------------------
+    Total                      1.191ns (0.360ns logic, 0.831ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pbdebounce1/clk_1ms0/clk_1s'
+  Clock period: 1.777ns (frequency: 562.746MHz)
+  Total number of paths / destination ports: 22 / 7
+-------------------------------------------------------------------------
+Delay:               1.777ns (Levels of Logic = 3)
+  Source:            pbdebounce1/pbshift_2 (FF)
+  Destination:       pbdebounce1/pbreg (FF)
+  Source Clock:      pbdebounce1/clk_1ms0/clk_1s rising
+  Destination Clock: pbdebounce1/clk_1ms0/clk_1s rising
+
+  Data Path: pbdebounce1/pbshift_2 to pbdebounce1/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.499  pbdebounce1/pbshift_2 (pbdebounce1/pbshift_2)
+     LUT3:I1->O            1   0.053   0.413  pbdebounce1/_n0011_SW0 (N01)
+     LUT6:I5->O            1   0.053   0.413  pbdebounce1/_n0011 (pbdebounce1/_n0011)
+     LUT6:I5->O            1   0.053   0.000  pbdebounce1/pbreg_rstpot (pbdebounce1/pbreg_rstpot)
+     FD:D                      0.011          pbdebounce1/pbreg
+    ----------------------------------------
+    Total                      1.777ns (0.452ns logic, 1.325ns route)
+                                       (25.4% logic, 74.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pbdebounce0/clk_1ms0/clk_1s'
+  Clock period: 1.777ns (frequency: 562.746MHz)
+  Total number of paths / destination ports: 22 / 7
+-------------------------------------------------------------------------
+Delay:               1.777ns (Levels of Logic = 3)
+  Source:            pbdebounce0/pbshift_2 (FF)
+  Destination:       pbdebounce0/pbreg (FF)
+  Source Clock:      pbdebounce0/clk_1ms0/clk_1s rising
+  Destination Clock: pbdebounce0/clk_1ms0/clk_1s rising
+
+  Data Path: pbdebounce0/pbshift_2 to pbdebounce0/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.499  pbdebounce0/pbshift_2 (pbdebounce0/pbshift_2)
+     LUT3:I1->O            1   0.053   0.413  pbdebounce0/_n0011_SW0 (N4)
+     LUT6:I5->O            1   0.053   0.413  pbdebounce0/_n0011 (pbdebounce0/_n0011)
+     LUT6:I5->O            1   0.053   0.000  pbdebounce0/pbreg_rstpot (pbdebounce0/pbreg_rstpot)
+     FD:D                      0.011          pbdebounce0/pbreg
+    ----------------------------------------
+    Total                      1.777ns (0.452ns logic, 1.325ns route)
+                                       (25.4% logic, 74.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pbdebounce1/clk_1ms0/clk_1s'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              1.612ns (Levels of Logic = 4)
+  Source:            SW<1> (PAD)
+  Destination:       pbdebounce1/pbreg (FF)
+  Destination Clock: pbdebounce1/clk_1ms0/clk_1s rising
+
+  Data Path: SW<1> to pbdebounce1/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.616  SW_1_IBUF (SW_1_IBUF)
+     LUT3:I0->O            1   0.053   0.413  pbdebounce1/_n0011_SW0 (N01)
+     LUT6:I5->O            1   0.053   0.413  pbdebounce1/_n0011 (pbdebounce1/_n0011)
+     LUT6:I5->O            1   0.053   0.000  pbdebounce1/pbreg_rstpot (pbdebounce1/pbreg_rstpot)
+     FD:D                      0.011          pbdebounce1/pbreg
+    ----------------------------------------
+    Total                      1.612ns (0.170ns logic, 1.442ns route)
+                                       (10.5% logic, 89.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pbdebounce0/clk_1ms0/clk_1s'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              1.612ns (Levels of Logic = 4)
+  Source:            SW<0> (PAD)
+  Destination:       pbdebounce0/pbreg (FF)
+  Destination Clock: pbdebounce0/clk_1ms0/clk_1s rising
+
+  Data Path: SW<0> to pbdebounce0/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.616  SW_0_IBUF (SW_0_IBUF)
+     LUT3:I0->O            1   0.053   0.413  pbdebounce0/_n0011_SW0 (N4)
+     LUT6:I5->O            1   0.053   0.413  pbdebounce0/_n0011 (pbdebounce0/_n0011)
+     LUT6:I5->O            1   0.053   0.000  pbdebounce0/pbreg_rstpot (pbdebounce0/pbreg_rstpot)
+     FD:D                      0.011          pbdebounce0/pbreg
+    ----------------------------------------
+    Total                      1.612ns (0.170ns logic, 1.442ns route)
+                                       (10.5% logic, 89.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pbdebounce0/pbreg'
+  Total number of paths / destination ports: 12209 / 12
+-------------------------------------------------------------------------
+Offset:              31.133ns (Levels of Logic = 41)
+  Source:            CreatNumber0/num<3:0>_0 (FF)
+  Destination:       Segment<3> (PAD)
+  Source Clock:      pbdebounce0/pbreg rising
+
+  Data Path: CreatNumber0/num<3:0>_0 to Segment<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.499  CreatNumber0/num<3:0>_0 (CreatNumber0/num<3:0>_0)
+     LUT3:I1->O            1   0.053   0.725  ShfitReg8b0/D<3>1 (ShfitReg8b0/D<3>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP3/XLXI_6 (ShfitReg8b0/D_FLIPFLOP3/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP3/XLXI_3 (ShfitReg8b0/D_FLIPFLOP3/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP3/XLXI_4 (ShfitReg8b0/D_FLIPFLOP3/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP3/XLXI_5 (ShfitReg8b0/D_FLIPFLOP3/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP3/XLXI_8 (ShfitReg8b0/D_FLIPFLOP3/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP3/XLXI_7 (LED_3_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<2>1 (ShfitReg8b0/D<2>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP2/XLXI_6 (ShfitReg8b0/D_FLIPFLOP2/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP2/XLXI_3 (ShfitReg8b0/D_FLIPFLOP2/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP2/XLXI_4 (ShfitReg8b0/D_FLIPFLOP2/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP2/XLXI_5 (ShfitReg8b0/D_FLIPFLOP2/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP2/XLXI_8 (ShfitReg8b0/D_FLIPFLOP2/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP2/XLXI_7 (LED_2_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<1>1 (ShfitReg8b0/D<1>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP1/XLXI_6 (ShfitReg8b0/D_FLIPFLOP1/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP1/XLXI_3 (ShfitReg8b0/D_FLIPFLOP1/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP1/XLXI_4 (ShfitReg8b0/D_FLIPFLOP1/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP1/XLXI_5 (ShfitReg8b0/D_FLIPFLOP1/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP1/XLXI_8 (ShfitReg8b0/D_FLIPFLOP1/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP1/XLXI_7 (LED_1_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<0>1 (ShfitReg8b0/D<0>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP0/XLXI_6 (ShfitReg8b0/D_FLIPFLOP0/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP0/XLXI_3 (ShfitReg8b0/D_FLIPFLOP0/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP0/XLXI_4 (ShfitReg8b0/D_FLIPFLOP0/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP0/XLXI_5 (ShfitReg8b0/D_FLIPFLOP0/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP0/XLXI_8 (ShfitReg8b0/D_FLIPFLOP0/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.505  ShfitReg8b0/D_FLIPFLOP0/XLXI_7 (LED_0_OBUF)
+     LUT5:I3->O            1   0.053   0.725  ShfitReg8b0/D<7>1 (ShfitReg8b0/D<7>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP7/XLXI_6 (ShfitReg8b0/D_FLIPFLOP7/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP7/XLXI_3 (ShfitReg8b0/D_FLIPFLOP7/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP7/XLXI_4 (ShfitReg8b0/D_FLIPFLOP7/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP7/XLXI_5 (ShfitReg8b0/D_FLIPFLOP7/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP7/XLXI_8 (ShfitReg8b0/D_FLIPFLOP7/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.655  ShfitReg8b0/D_FLIPFLOP7/XLXI_7 (LED_7_OBUF)
+     LUT6:I2->O            8   0.053   0.445  disp_num0/XLXI_3/Mmux_Hex41 (disp_num0/Hex<3>)
+     INV:I->O             11   0.393   0.668  disp_num0/XLXI_2/XLXI_1 (disp_num0/XLXI_2/XLXN_54)
+     AND4:I3->O            2   0.190   0.608  disp_num0/XLXI_2/AD20 (disp_num0/XLXI_2/XLXN_25)
+     OR4:I3->O             1   0.190   0.725  disp_num0/XLXI_2/XLXI_30 (disp_num0/XLXI_2/XLXN_41)
+     OR2:I1->O             1   0.067   0.399  disp_num0/XLXI_2/XLXI_37 (Segment_3_OBUF)
+     OBUF:I->O                 0.000          Segment_3_OBUF (Segment<3>)
+    ----------------------------------------
+    Total                     31.133ns (3.830ns logic, 27.303ns route)
+                                       (12.3% logic, 87.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pbdebounce1/pbreg'
+  Total number of paths / destination ports: 322745 / 15
+-------------------------------------------------------------------------
+Offset:              46.931ns (Levels of Logic = 62)
+  Source:            CreatNumber0/num<4>_num<5>_num<6>_num<7>_1 (FF)
+  Destination:       Segment<3> (PAD)
+  Source Clock:      pbdebounce1/pbreg rising
+
+  Data Path: CreatNumber0/num<4>_num<5>_num<6>_num<7>_1 to Segment<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.282   0.505  CreatNumber0/num<4>_num<5>_num<6>_num<7>_1 (CreatNumber0/num<4>_num<5>_num<6>_num<7>_1)
+     LUT3:I1->O            1   0.053   0.725  ShfitReg8b0/D<6>1 (ShfitReg8b0/D<6>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP6/XLXI_6 (ShfitReg8b0/D_FLIPFLOP6/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP6/XLXI_3 (ShfitReg8b0/D_FLIPFLOP6/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP6/XLXI_4 (ShfitReg8b0/D_FLIPFLOP6/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP6/XLXI_5 (ShfitReg8b0/D_FLIPFLOP6/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP6/XLXI_8 (ShfitReg8b0/D_FLIPFLOP6/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP6/XLXI_7 (LED_6_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<5>1 (ShfitReg8b0/D<5>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP5/XLXI_6 (ShfitReg8b0/D_FLIPFLOP5/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP5/XLXI_3 (ShfitReg8b0/D_FLIPFLOP5/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP5/XLXI_4 (ShfitReg8b0/D_FLIPFLOP5/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP5/XLXI_5 (ShfitReg8b0/D_FLIPFLOP5/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP5/XLXI_8 (ShfitReg8b0/D_FLIPFLOP5/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP5/XLXI_7 (LED_5_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<4>1 (ShfitReg8b0/D<4>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP4/XLXI_6 (ShfitReg8b0/D_FLIPFLOP4/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP4/XLXI_3 (ShfitReg8b0/D_FLIPFLOP4/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP4/XLXI_4 (ShfitReg8b0/D_FLIPFLOP4/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP4/XLXI_5 (ShfitReg8b0/D_FLIPFLOP4/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP4/XLXI_8 (ShfitReg8b0/D_FLIPFLOP4/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP4/XLXI_7 (LED_4_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<3>1 (ShfitReg8b0/D<3>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP3/XLXI_6 (ShfitReg8b0/D_FLIPFLOP3/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP3/XLXI_3 (ShfitReg8b0/D_FLIPFLOP3/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP3/XLXI_4 (ShfitReg8b0/D_FLIPFLOP3/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP3/XLXI_5 (ShfitReg8b0/D_FLIPFLOP3/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP3/XLXI_8 (ShfitReg8b0/D_FLIPFLOP3/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP3/XLXI_7 (LED_3_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<2>1 (ShfitReg8b0/D<2>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP2/XLXI_6 (ShfitReg8b0/D_FLIPFLOP2/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP2/XLXI_3 (ShfitReg8b0/D_FLIPFLOP2/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP2/XLXI_4 (ShfitReg8b0/D_FLIPFLOP2/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP2/XLXI_5 (ShfitReg8b0/D_FLIPFLOP2/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP2/XLXI_8 (ShfitReg8b0/D_FLIPFLOP2/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP2/XLXI_7 (LED_2_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<1>1 (ShfitReg8b0/D<1>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP1/XLXI_6 (ShfitReg8b0/D_FLIPFLOP1/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP1/XLXI_3 (ShfitReg8b0/D_FLIPFLOP1/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP1/XLXI_4 (ShfitReg8b0/D_FLIPFLOP1/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP1/XLXI_5 (ShfitReg8b0/D_FLIPFLOP1/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP1/XLXI_8 (ShfitReg8b0/D_FLIPFLOP1/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP1/XLXI_7 (LED_1_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<0>1 (ShfitReg8b0/D<0>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP0/XLXI_6 (ShfitReg8b0/D_FLIPFLOP0/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP0/XLXI_3 (ShfitReg8b0/D_FLIPFLOP0/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP0/XLXI_4 (ShfitReg8b0/D_FLIPFLOP0/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP0/XLXI_5 (ShfitReg8b0/D_FLIPFLOP0/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP0/XLXI_8 (ShfitReg8b0/D_FLIPFLOP0/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.505  ShfitReg8b0/D_FLIPFLOP0/XLXI_7 (LED_0_OBUF)
+     LUT5:I3->O            1   0.053   0.725  ShfitReg8b0/D<7>1 (ShfitReg8b0/D<7>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP7/XLXI_6 (ShfitReg8b0/D_FLIPFLOP7/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP7/XLXI_3 (ShfitReg8b0/D_FLIPFLOP7/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP7/XLXI_4 (ShfitReg8b0/D_FLIPFLOP7/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP7/XLXI_5 (ShfitReg8b0/D_FLIPFLOP7/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP7/XLXI_8 (ShfitReg8b0/D_FLIPFLOP7/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.655  ShfitReg8b0/D_FLIPFLOP7/XLXI_7 (LED_7_OBUF)
+     LUT6:I2->O            8   0.053   0.445  disp_num0/XLXI_3/Mmux_Hex41 (disp_num0/Hex<3>)
+     INV:I->O             11   0.393   0.668  disp_num0/XLXI_2/XLXI_1 (disp_num0/XLXI_2/XLXN_54)
+     AND4:I3->O            2   0.190   0.608  disp_num0/XLXI_2/AD20 (disp_num0/XLXI_2/XLXN_25)
+     OR4:I3->O             1   0.190   0.725  disp_num0/XLXI_2/XLXI_30 (disp_num0/XLXI_2/XLXN_41)
+     OR2:I1->O             1   0.067   0.399  disp_num0/XLXI_2/XLXI_37 (Segment_3_OBUF)
+     OBUF:I->O                 0.000          Segment_3_OBUF (Segment<3>)
+    ----------------------------------------
+    Total                     46.931ns (5.423ns logic, 41.508ns route)
+                                       (11.6% logic, 88.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 334962 / 19
+-------------------------------------------------------------------------
+Offset:              44.889ns (Levels of Logic = 59)
+  Source:            counter_1s0/clk_1s (FF)
+  Destination:       Segment<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: counter_1s0/clk_1s to Segment<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              17   0.282   0.845  counter_1s0/clk_1s (counter_1s0/clk_1s)
+     NAND3:I0->O           3   0.053   0.739  ShfitReg8b0/D_FLIPFLOP6/XLXI_4 (ShfitReg8b0/D_FLIPFLOP6/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP6/XLXI_5 (ShfitReg8b0/D_FLIPFLOP6/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP6/XLXI_8 (ShfitReg8b0/D_FLIPFLOP6/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP6/XLXI_7 (LED_6_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<5>1 (ShfitReg8b0/D<5>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP5/XLXI_6 (ShfitReg8b0/D_FLIPFLOP5/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP5/XLXI_3 (ShfitReg8b0/D_FLIPFLOP5/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP5/XLXI_4 (ShfitReg8b0/D_FLIPFLOP5/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP5/XLXI_5 (ShfitReg8b0/D_FLIPFLOP5/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP5/XLXI_8 (ShfitReg8b0/D_FLIPFLOP5/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP5/XLXI_7 (LED_5_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<4>1 (ShfitReg8b0/D<4>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP4/XLXI_6 (ShfitReg8b0/D_FLIPFLOP4/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP4/XLXI_3 (ShfitReg8b0/D_FLIPFLOP4/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP4/XLXI_4 (ShfitReg8b0/D_FLIPFLOP4/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP4/XLXI_5 (ShfitReg8b0/D_FLIPFLOP4/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP4/XLXI_8 (ShfitReg8b0/D_FLIPFLOP4/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP4/XLXI_7 (LED_4_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<3>1 (ShfitReg8b0/D<3>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP3/XLXI_6 (ShfitReg8b0/D_FLIPFLOP3/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP3/XLXI_3 (ShfitReg8b0/D_FLIPFLOP3/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP3/XLXI_4 (ShfitReg8b0/D_FLIPFLOP3/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP3/XLXI_5 (ShfitReg8b0/D_FLIPFLOP3/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP3/XLXI_8 (ShfitReg8b0/D_FLIPFLOP3/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP3/XLXI_7 (LED_3_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<2>1 (ShfitReg8b0/D<2>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP2/XLXI_6 (ShfitReg8b0/D_FLIPFLOP2/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP2/XLXI_3 (ShfitReg8b0/D_FLIPFLOP2/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP2/XLXI_4 (ShfitReg8b0/D_FLIPFLOP2/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP2/XLXI_5 (ShfitReg8b0/D_FLIPFLOP2/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP2/XLXI_8 (ShfitReg8b0/D_FLIPFLOP2/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP2/XLXI_7 (LED_2_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<1>1 (ShfitReg8b0/D<1>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP1/XLXI_6 (ShfitReg8b0/D_FLIPFLOP1/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP1/XLXI_3 (ShfitReg8b0/D_FLIPFLOP1/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP1/XLXI_4 (ShfitReg8b0/D_FLIPFLOP1/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP1/XLXI_5 (ShfitReg8b0/D_FLIPFLOP1/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP1/XLXI_8 (ShfitReg8b0/D_FLIPFLOP1/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP1/XLXI_7 (LED_1_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<0>1 (ShfitReg8b0/D<0>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP0/XLXI_6 (ShfitReg8b0/D_FLIPFLOP0/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP0/XLXI_3 (ShfitReg8b0/D_FLIPFLOP0/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP0/XLXI_4 (ShfitReg8b0/D_FLIPFLOP0/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP0/XLXI_5 (ShfitReg8b0/D_FLIPFLOP0/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP0/XLXI_8 (ShfitReg8b0/D_FLIPFLOP0/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.505  ShfitReg8b0/D_FLIPFLOP0/XLXI_7 (LED_0_OBUF)
+     LUT5:I3->O            1   0.053   0.725  ShfitReg8b0/D<7>1 (ShfitReg8b0/D<7>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP7/XLXI_6 (ShfitReg8b0/D_FLIPFLOP7/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP7/XLXI_3 (ShfitReg8b0/D_FLIPFLOP7/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP7/XLXI_4 (ShfitReg8b0/D_FLIPFLOP7/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP7/XLXI_5 (ShfitReg8b0/D_FLIPFLOP7/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP7/XLXI_8 (ShfitReg8b0/D_FLIPFLOP7/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.655  ShfitReg8b0/D_FLIPFLOP7/XLXI_7 (LED_7_OBUF)
+     LUT6:I2->O            8   0.053   0.445  disp_num0/XLXI_3/Mmux_Hex41 (disp_num0/Hex<3>)
+     INV:I->O             11   0.393   0.668  disp_num0/XLXI_2/XLXI_1 (disp_num0/XLXI_2/XLXN_54)
+     AND4:I3->O            2   0.190   0.608  disp_num0/XLXI_2/AD20 (disp_num0/XLXI_2/XLXN_25)
+     OR4:I3->O             1   0.190   0.725  disp_num0/XLXI_2/XLXI_30 (disp_num0/XLXI_2/XLXN_41)
+     OR2:I1->O             1   0.067   0.399  disp_num0/XLXI_2/XLXI_37 (Segment_3_OBUF)
+     OBUF:I->O                 0.000          Segment_3_OBUF (Segment<3>)
+    ----------------------------------------
+    Total                     44.889ns (5.132ns logic, 39.757ns route)
+                                       (11.4% logic, 88.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 334920 / 15
+-------------------------------------------------------------------------
+Delay:               46.792ns (Levels of Logic = 63)
+  Source:            SW<2> (PAD)
+  Destination:       Segment<3> (PAD)
+
+  Data Path: SW<2> to Segment<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.000   0.648  SW_2_IBUF (SW_2_IBUF)
+     LUT3:I0->O            1   0.053   0.725  ShfitReg8b0/D<6>1 (ShfitReg8b0/D<6>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP6/XLXI_6 (ShfitReg8b0/D_FLIPFLOP6/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP6/XLXI_3 (ShfitReg8b0/D_FLIPFLOP6/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP6/XLXI_4 (ShfitReg8b0/D_FLIPFLOP6/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP6/XLXI_5 (ShfitReg8b0/D_FLIPFLOP6/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP6/XLXI_8 (ShfitReg8b0/D_FLIPFLOP6/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP6/XLXI_7 (LED_6_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<5>1 (ShfitReg8b0/D<5>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP5/XLXI_6 (ShfitReg8b0/D_FLIPFLOP5/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP5/XLXI_3 (ShfitReg8b0/D_FLIPFLOP5/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP5/XLXI_4 (ShfitReg8b0/D_FLIPFLOP5/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP5/XLXI_5 (ShfitReg8b0/D_FLIPFLOP5/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP5/XLXI_8 (ShfitReg8b0/D_FLIPFLOP5/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP5/XLXI_7 (LED_5_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<4>1 (ShfitReg8b0/D<4>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP4/XLXI_6 (ShfitReg8b0/D_FLIPFLOP4/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP4/XLXI_3 (ShfitReg8b0/D_FLIPFLOP4/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP4/XLXI_4 (ShfitReg8b0/D_FLIPFLOP4/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP4/XLXI_5 (ShfitReg8b0/D_FLIPFLOP4/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP4/XLXI_8 (ShfitReg8b0/D_FLIPFLOP4/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP4/XLXI_7 (LED_4_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<3>1 (ShfitReg8b0/D<3>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP3/XLXI_6 (ShfitReg8b0/D_FLIPFLOP3/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP3/XLXI_3 (ShfitReg8b0/D_FLIPFLOP3/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP3/XLXI_4 (ShfitReg8b0/D_FLIPFLOP3/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP3/XLXI_5 (ShfitReg8b0/D_FLIPFLOP3/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP3/XLXI_8 (ShfitReg8b0/D_FLIPFLOP3/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP3/XLXI_7 (LED_3_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<2>1 (ShfitReg8b0/D<2>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP2/XLXI_6 (ShfitReg8b0/D_FLIPFLOP2/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP2/XLXI_3 (ShfitReg8b0/D_FLIPFLOP2/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP2/XLXI_4 (ShfitReg8b0/D_FLIPFLOP2/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP2/XLXI_5 (ShfitReg8b0/D_FLIPFLOP2/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP2/XLXI_8 (ShfitReg8b0/D_FLIPFLOP2/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP2/XLXI_7 (LED_2_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<1>1 (ShfitReg8b0/D<1>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP1/XLXI_6 (ShfitReg8b0/D_FLIPFLOP1/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP1/XLXI_3 (ShfitReg8b0/D_FLIPFLOP1/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP1/XLXI_4 (ShfitReg8b0/D_FLIPFLOP1/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP1/XLXI_5 (ShfitReg8b0/D_FLIPFLOP1/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP1/XLXI_8 (ShfitReg8b0/D_FLIPFLOP1/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.433  ShfitReg8b0/D_FLIPFLOP1/XLXI_7 (LED_1_OBUF)
+     LUT3:I2->O            1   0.053   0.725  ShfitReg8b0/D<0>1 (ShfitReg8b0/D<0>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP0/XLXI_6 (ShfitReg8b0/D_FLIPFLOP0/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP0/XLXI_3 (ShfitReg8b0/D_FLIPFLOP0/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP0/XLXI_4 (ShfitReg8b0/D_FLIPFLOP0/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP0/XLXI_5 (ShfitReg8b0/D_FLIPFLOP0/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP0/XLXI_8 (ShfitReg8b0/D_FLIPFLOP0/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.505  ShfitReg8b0/D_FLIPFLOP0/XLXI_7 (LED_0_OBUF)
+     LUT5:I3->O            1   0.053   0.725  ShfitReg8b0/D<7>1 (ShfitReg8b0/D<7>)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP7/XLXI_6 (ShfitReg8b0/D_FLIPFLOP7/XLXN_13)
+     NAND3:I1->O           1   0.067   0.635  ShfitReg8b0/D_FLIPFLOP7/XLXI_3 (ShfitReg8b0/D_FLIPFLOP7/XLXN_1)
+     NAND3:I2->O           3   0.157   0.739  ShfitReg8b0/D_FLIPFLOP7/XLXI_4 (ShfitReg8b0/D_FLIPFLOP7/XLXN_2)
+     NAND3:I1->O           2   0.067   0.731  ShfitReg8b0/D_FLIPFLOP7/XLXI_5 (ShfitReg8b0/D_FLIPFLOP7/XLXN_9)
+     NAND3:I1->O           1   0.067   0.739  ShfitReg8b0/D_FLIPFLOP7/XLXI_8 (ShfitReg8b0/D_FLIPFLOP7/Qbar_DUMMY)
+     NAND3:I0->O           4   0.053   0.655  ShfitReg8b0/D_FLIPFLOP7/XLXI_7 (LED_7_OBUF)
+     LUT6:I2->O            8   0.053   0.445  disp_num0/XLXI_3/Mmux_Hex41 (disp_num0/Hex<3>)
+     INV:I->O             11   0.393   0.668  disp_num0/XLXI_2/XLXI_1 (disp_num0/XLXI_2/XLXN_54)
+     AND4:I3->O            2   0.190   0.608  disp_num0/XLXI_2/AD20 (disp_num0/XLXI_2/XLXN_25)
+     OR4:I3->O             1   0.190   0.725  disp_num0/XLXI_2/XLXI_30 (disp_num0/XLXI_2/XLXN_41)
+     OR2:I1->O             1   0.067   0.399  disp_num0/XLXI_2/XLXI_37 (Segment_3_OBUF)
+     OBUF:I->O                 0.000          Segment_3_OBUF (Segment<3>)
+    ----------------------------------------
+    Total                     46.792ns (5.141ns logic, 41.651ns route)
+                                       (11.0% logic, 89.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.506|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pbdebounce0/clk_1ms0/clk_1s
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+pbdebounce0/clk_1ms0/clk_1s|    1.777|         |         |         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pbdebounce0/pbreg
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+pbdebounce0/pbreg|    1.191|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pbdebounce1/clk_1ms0/clk_1s
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+pbdebounce1/clk_1ms0/clk_1s|    1.777|         |         |         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pbdebounce1/pbreg
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+pbdebounce1/pbreg|    1.191|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.30 secs
+ 
+--> 
+
+Total memory usage is 4654608 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

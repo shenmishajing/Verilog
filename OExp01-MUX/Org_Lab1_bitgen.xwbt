@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\Verilog\OExp01-MUX\Org_Lab1.ncd
+OUTFILE=Z:\Verilog\OExp01-MUX\Org_Lab1.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=Z:\Verilog\OExp01-MUX
+LICENSE=WebPack
+USER_INFO=__0_0_0

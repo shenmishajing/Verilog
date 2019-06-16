@@ -1,0 +1,186 @@
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp10_MDP/OExp10_MDP.xst" -ofn "Z:/Verilog/OExp10_MDP/OExp10_MDP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp10_MDP.ngc OExp10_MDP.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp10_MDP_map.ncd OExp10_MDP.ngd OExp10_MDP.pcf 
+par -w -intstyle ise -ol high -mt off OExp10_MDP_map.ncd OExp10_MDP.ncd OExp10_MDP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp10_MDP.twx OExp10_MDP.ncd -o OExp10_MDP.twr OExp10_MDP.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp10_MDP.ut OExp10_MDP.ncd 

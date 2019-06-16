@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/Verilog/My74LS161/My74LS161_TEST_isim_beh.exe" -prj "Y:/Verilog/My74LS161/My74LS161_TEST_beh.prj" "work.My74LS161_TEST" "work.glbl" 

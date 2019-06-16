@@ -1,0 +1,4 @@
+vhdtdtfi -lib work Z:/Verilog/OExp02-7SEG/MUX2T1_64.v -lang verilog -prj OExp02-7SEG -o MUX2T1_64.spl -module MUX2T1_64 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX2T1_64.spl Z:/Verilog/OExp02-7SEG/MUX2T1_64.sym 
+vhdtdtfi -lib work Z:/Verilog/OExp02-7SEG/MUX2T1_64.v -lang verilog -prj OExp02-7SEG -o MUX2T1_64.spl -module MUX2T1_64 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX2T1_64.spl Z:/Verilog/OExp02-7SEG/MUX2T1_64.sym 

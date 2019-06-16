@@ -1,0 +1,223 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'ALU'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o ALU_map.ncd ALU.ngd ALU.pcf 
+Target Device  : xc7a100t
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Tue Nov 20 14:51:33 2018
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :  12
+
+Section 1 - Errors
+------------------
+ERROR:Pack:198 - NCD was not produced.  All logic was removed from the design. 
+   This is usually due to having no input or output PAD connections in the
+   design and no nets or symbols marked as 'SAVE'.  You can either add PADs or
+   'SAVE' attributes to the design, or run 'map -u' to disable logic trimming in
+   the mapper.  For more information on trimming issues search the Xilinx
+   Answers database for "ERROR:Pack:198" and read the Master Answer Record for
+   MAP Trimming Issues.
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:701 - PAD symbol "S<1>" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "S<1>" is not constrained (LOC) to a specific
+   location.
+WARNING:MapLib:701 - Signal S<1> connected to top level port S<1> has been
+   removed.
+WARNING:MapLib:701 - Signal S<0> connected to top level port S<0> has been
+   removed.
+WARNING:MapLib:701 - Signal A<3> connected to top level port A<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A<2> connected to top level port A<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A<1> connected to top level port A<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A<0> connected to top level port A<0> has been
+   removed.
+WARNING:MapLib:701 - Signal B<3> connected to top level port B<3> has been
+   removed.
+WARNING:MapLib:701 - Signal B<2> connected to top level port B<2> has been
+   removed.
+WARNING:MapLib:701 - Signal B<1> connected to top level port B<1> has been
+   removed.
+WARNING:MapLib:701 - Signal B<0> connected to top level port B<0> has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network C<3> has no load.
+INFO:LIT:395 - The above info message is repeated 4 more times for the following
+   (max. 5 shown):
+   C<2>,
+   C<1>,
+   C<0>,
+   C0
+   To see the details of these info messages, please use the -detail switch.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  72 block(s) removed
+  67 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "MUX4to10/XLXI_12" (OR) removed.
+ The signal "MUX4to10/XLXN_27" is loadless and has been removed.
+  Loadless block "MUX4to10/XLXI_10" (AND) removed.
+   The signal "N1" is loadless and has been removed.
+    Loadless block "XST_GND" (ZERO) removed.
+   The signal "MUX4to10/XLXN_19" is loadless and has been removed.
+    Loadless block "MUX4to10/XLXI_6" (AND) removed.
+     The signal "S_1_IBUF" is loadless and has been removed.
+      Loadless block "S_1_IBUF" (BUF) removed.
+       The signal "S<1>" is loadless and has been removed.
+        Loadless block "S<1>" (PAD) removed.
+     The signal "S_0_IBUF" is loadless and has been removed.
+      Loadless block "S_0_IBUF" (BUF) removed.
+       The signal "S<0>" is loadless and has been removed.
+        Loadless block "S<0>" (PAD) removed.
+ The signal "MUX4to10/XLXN_26" is loadless and has been removed.
+  Loadless block "MUX4to10/XLXI_9" (AND) removed.
+   The signal "MUX4to10/XLXN_18" is loadless and has been removed.
+    Loadless block "MUX4to10/XLXI_5" (AND) removed.
+     The signal "MUX4to10/XLXN_12" is loadless and has been removed.
+      Loadless block "MUX4to10/XLXI_2" (BUF) removed.
+ The signal "MUX4to10/XLXN_25" is loadless and has been removed.
+  Loadless block "MUX4to10/XLXI_8" (AND) removed.
+   The signal "CC" is loadless and has been removed.
+    Loadless block "AddSub4b0/AddSub1b3/adder_1bit0/Mxor_C0_xo<0>1" (ROM) removed.
+     The signal "A_3_IBUF" is loadless and has been removed.
+      Loadless block "A_3_IBUF" (BUF) removed.
+       The signal "A<3>" is loadless and has been removed.
+        Loadless block "A<3>" (PAD) removed.
+     The signal "B_3_IBUF" is loadless and has been removed.
+      Loadless block "B_3_IBUF" (BUF) removed.
+       The signal "B<3>" is loadless and has been removed.
+        Loadless block "B<3>" (PAD) removed.
+     The signal "A_2_IBUF" is loadless and has been removed.
+      Loadless block "A_2_IBUF" (BUF) removed.
+       The signal "A<2>" is loadless and has been removed.
+        Loadless block "A<2>" (PAD) removed.
+     The signal "AddSub4b0/C<1>" is loadless and has been removed.
+      Loadless block "AddSub4b0/AddSub1b1/adder_1bit0/Mxor_C0_xo<0>1" (ROM) removed.
+       The signal "B_1_IBUF" is loadless and has been removed.
+        Loadless block "B_1_IBUF" (BUF) removed.
+         The signal "B<1>" is loadless and has been removed.
+          Loadless block "B<1>" (PAD) removed.
+       The signal "A_1_IBUF" is loadless and has been removed.
+        Loadless block "A_1_IBUF" (BUF) removed.
+         The signal "A<1>" is loadless and has been removed.
+          Loadless block "A<1>" (PAD) removed.
+       The signal "B_0_IBUF" is loadless and has been removed.
+        Loadless block "B_0_IBUF" (BUF) removed.
+         The signal "B<0>" is loadless and has been removed.
+          Loadless block "B<0>" (PAD) removed.
+       The signal "A_0_IBUF" is loadless and has been removed.
+        Loadless block "A_0_IBUF" (BUF) removed.
+         The signal "A<0>" is loadless and has been removed.
+          Loadless block "A<0>" (PAD) removed.
+     The signal "B_2_IBUF" is loadless and has been removed.
+      Loadless block "B_2_IBUF" (BUF) removed.
+       The signal "B<2>" is loadless and has been removed.
+        Loadless block "B<2>" (PAD) removed.
+   The signal "MUX4to10/XLXN_17" is loadless and has been removed.
+    Loadless block "MUX4to10/XLXI_4" (AND) removed.
+     The signal "MUX4to10/XLXN_10" is loadless and has been removed.
+      Loadless block "MUX4to10/XLXI_1" (BUF) removed.
+ The signal "MUX4to10/XLXN_24" is loadless and has been removed.
+  Loadless block "MUX4to10/XLXI_7" (AND) removed.
+   The signal "MUX4to10/XLXN_16" is loadless and has been removed.
+    Loadless block "MUX4to10/XLXI_3" (AND) removed.
+Loadless block "Mux4to14b0/XLXI_11" (OR) removed.
+ The signal "Mux4to14b0/XLXN_12" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_10" (AND) removed.
+   The signal "C2<0>" is loadless and has been removed.
+    Loadless block "myOr2b40/C<0>1" (ROM) removed.
+   The signal "Mux4to14b0/XLXN_48" is loadless and has been removed.
+    Loadless block "Mux4to14b0/XLXI_6" (AND) removed.
+ The signal "Mux4to14b0/XLXN_11" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_9" (AND) removed.
+   The signal "C1<0>" is loadless and has been removed.
+    Loadless block "myAnd240/C<0>1" (ROM) removed.
+   The signal "Mux4to14b0/XLXN_47" is loadless and has been removed.
+    Loadless block "Mux4to14b0/XLXI_5" (AND) removed.
+     The signal "Mux4to14b0/XLXN_6" is loadless and has been removed.
+      Loadless block "Mux4to14b0/XLXI_2" (BUF) removed.
+ The signal "Mux4to14b0/XLXN_10" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_8" (AND) removed.
+   The signal "S0<0>" is loadless and has been removed.
+    Loadless block "AddSub4b0/AddSub1b0/adder_1bit0/Mxor_S_xo<0>1" (ROM) removed.
+   The signal "Mux4to14b0/XLXN_46" is loadless and has been removed.
+    Loadless block "Mux4to14b0/XLXI_4" (AND) removed.
+     The signal "Mux4to14b0/XLXN_4" is loadless and has been removed.
+      Loadless block "Mux4to14b0/XLXI_1" (BUF) removed.
+ The signal "Mux4to14b0/XLXN_9" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_7" (AND) removed.
+   The signal "Mux4to14b0/XLXN_45" is loadless and has been removed.
+    Loadless block "Mux4to14b0/XLXI_3" (AND) removed.
+Loadless block "Mux4to14b0/XLXI_16" (OR) removed.
+ The signal "Mux4to14b0/XLXN_16" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_15" (AND) removed.
+   The signal "C2<1>" is loadless and has been removed.
+    Loadless block "myOr2b40/C<1>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_15" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_14" (AND) removed.
+   The signal "C1<1>" is loadless and has been removed.
+    Loadless block "myAnd240/C<1>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_14" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_13" (AND) removed.
+   The signal "S0<1>" is loadless and has been removed.
+    Loadless block "AddSub4b0/AddSub1b1/adder_1bit0/Mxor_S_xo<0>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_13" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_12" (AND) removed.
+Loadless block "Mux4to14b0/XLXI_21" (OR) removed.
+ The signal "Mux4to14b0/XLXN_20" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_20" (AND) removed.
+   The signal "C2<2>" is loadless and has been removed.
+    Loadless block "myOr2b40/C<2>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_19" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_19" (AND) removed.
+   The signal "C1<2>" is loadless and has been removed.
+    Loadless block "myAnd240/C<2>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_18" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_18" (AND) removed.
+   The signal "S0<2>" is loadless and has been removed.
+    Loadless block "AddSub4b0/AddSub1b2/adder_1bit0/Mxor_S_xo<0>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_17" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_17" (AND) removed.
+Loadless block "Mux4to14b0/XLXI_51" (OR) removed.
+ The signal "Mux4to14b0/XLXN_44" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_50" (AND) removed.
+   The signal "C2<3>" is loadless and has been removed.
+    Loadless block "myOr2b40/C<3>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_43" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_49" (AND) removed.
+   The signal "C1<3>" is loadless and has been removed.
+    Loadless block "myAnd240/C<3>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_42" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_48" (AND) removed.
+   The signal "S0<3>" is loadless and has been removed.
+    Loadless block "AddSub4b0/AddSub1b3/adder_1bit0/Mxor_S_xo<0>1" (ROM) removed.
+ The signal "Mux4to14b0/XLXN_41" is loadless and has been removed.
+  Loadless block "Mux4to14b0/XLXI_47" (AND) removed.

@@ -1,0 +1,6 @@
+verilog work "PS2.v"
+verilog work "ipcore_dir/WinCore.v"
+verilog work "ipcore_dir/source.v"
+verilog work "ipcore_dir/MapCore.v"
+verilog work "ipcore_dir/LoseCore.v"
+verilog work "Top.v"

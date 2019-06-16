@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=Z:\Projects\Verilog\LampCtrl_HDL\impact.xsl
+OUTFILE=Z:\Projects\Verilog\LampCtrl_HDL\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=Z:\Projects\Verilog\LampCtrl_HDL
+LICENSE=iMPACT
+USER_INFO=iMPACT

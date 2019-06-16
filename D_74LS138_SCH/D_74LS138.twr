@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml D_74LS138.twx D_74LS138.ncd -o D_74LS138.twr D_74LS138.pcf
+
+Design file:              D_74LS138.ncd
+Physical constraint file: D_74LS138.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A              |Y<0>           |    6.761|
+A              |Y<1>           |    7.308|
+A              |Y<2>           |    7.234|
+A              |Y<3>           |    7.221|
+A              |Y<4>           |    6.961|
+A              |Y<5>           |    7.017|
+A              |Y<6>           |    6.633|
+A              |Y<7>           |    7.061|
+B              |Y<0>           |    6.585|
+B              |Y<1>           |    7.230|
+B              |Y<2>           |    7.239|
+B              |Y<3>           |    7.159|
+B              |Y<4>           |    6.785|
+B              |Y<5>           |    6.939|
+B              |Y<6>           |    6.638|
+B              |Y<7>           |    6.999|
+C              |Y<0>           |    6.439|
+C              |Y<1>           |    6.764|
+C              |Y<2>           |    6.526|
+C              |Y<3>           |    6.430|
+C              |Y<4>           |    6.589|
+C              |Y<5>           |    6.741|
+C              |Y<6>           |    6.579|
+C              |Y<7>           |    6.684|
+G              |Y<0>           |    6.762|
+G              |Y<1>           |    7.044|
+G              |Y<2>           |    6.980|
+G              |Y<3>           |    6.739|
+G              |Y<4>           |    6.950|
+G              |Y<5>           |    6.874|
+G              |Y<6>           |    6.639|
+G              |Y<7>           |    6.732|
+G2A            |Y<0>           |    6.818|
+G2A            |Y<1>           |    7.100|
+G2A            |Y<2>           |    7.036|
+G2A            |Y<3>           |    6.795|
+G2A            |Y<4>           |    7.006|
+G2A            |Y<5>           |    6.930|
+G2A            |Y<6>           |    6.695|
+G2A            |Y<7>           |    6.788|
+G2B            |Y<0>           |    7.040|
+G2B            |Y<1>           |    7.322|
+G2B            |Y<2>           |    7.258|
+G2B            |Y<3>           |    7.017|
+G2B            |Y<4>           |    7.228|
+G2B            |Y<5>           |    7.152|
+G2B            |Y<6>           |    6.917|
+G2B            |Y<7>           |    7.010|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Oct 23 15:18:15 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5103 MB
+
+
+

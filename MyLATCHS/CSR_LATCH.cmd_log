@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "Z:/Projects/Verilog/MyLATCHS/CSR_LATCH.xst" -ofn "Z:/Projects/Verilog/MyLATCHS/CSR_LATCH.syr" 

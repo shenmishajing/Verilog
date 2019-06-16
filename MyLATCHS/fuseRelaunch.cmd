@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/Projects/Verilog/MyLATCHS/MS_FLIPFLOP_TEST_isim_beh.exe" -prj "Z:/Projects/Verilog/MyLATCHS/MS_FLIPFLOP_TEST_beh.prj" "work.MS_FLIPFLOP_TEST" "work.glbl" 

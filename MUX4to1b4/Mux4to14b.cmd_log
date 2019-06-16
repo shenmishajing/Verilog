@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "Z:/Projects/Verilog/MUX4to1b4/Mux4to14b.xst" -ofn "Z:/Projects/Verilog/MUX4to1b4/Mux4to14b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 Mux4to14b.ngc Mux4to14b.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mux4to14b_map.ncd Mux4to14b.ngd Mux4to14b.pcf 
+par -w -intstyle ise -ol high -mt off Mux4to14b_map.ncd Mux4to14b.ncd Mux4to14b.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Mux4to14b.twx Mux4to14b.ncd -o Mux4to14b.twr Mux4to14b.pcf 
+bitgen -intstyle ise -f Mux4to14b.ut Mux4to14b.ncd 

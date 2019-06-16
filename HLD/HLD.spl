@@ -1,0 +1,16 @@
+[Inputs]
+A
+B
+C
+D
+[Outputs]
+GNS
+YNS
+RNS
+GEW
+YEW
+REW
+[BiDir]
+[ATTRIBUTES]
+VeriModel HLD
+

@@ -1,0 +1,54 @@
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp12_MSOC.twx OExp12_MSOC.ncd -o OExp12_MSOC.twr OExp12_MSOC.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp12_MSOC.twx OExp12_MSOC.ncd -o OExp12_MSOC.twr OExp12_MSOC.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp12_MSOC.twx OExp12_MSOC.ncd -o OExp12_MSOC.twr OExp12_MSOC.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp12_MSOC.twx OExp12_MSOC.ncd -o OExp12_MSOC.twr OExp12_MSOC.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp12_MSOC.twx OExp12_MSOC.ncd -o OExp12_MSOC.twr OExp12_MSOC.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.xst" -ofn "Z:/Verilog/OExp12-MSOC/OExp12_MSOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L OExp12_MSOC.ngc OExp12_MSOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp12_MSOC_map.ncd OExp12_MSOC.ngd OExp12_MSOC.pcf 
+par -w -intstyle ise -ol high -mt off OExp12_MSOC_map.ncd OExp12_MSOC.ncd OExp12_MSOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp12_MSOC.twx OExp12_MSOC.ncd -o OExp12_MSOC.twr OExp12_MSOC.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f OExp12_MSOC.ut OExp12_MSOC.ncd 

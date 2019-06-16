@@ -1,0 +1,1 @@
+sch2hdl -intstyle ise -family kintex7 -verilog disp_num_drc.vf -w Z:/Projects/Verilog/ScoreBoard/disp_num.sch 

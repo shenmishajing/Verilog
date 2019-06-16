@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml MyMC14495.twx MyMC14495.ncd -o MyMC14495.twr MyMC14495.pcf
+
+Design file:              MyMC14495.ncd
+Physical constraint file: MyMC14495.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+D0             |a              |    6.275|
+D0             |b              |    5.944|
+D0             |c              |    5.832|
+D0             |d              |    6.484|
+D0             |e              |    5.281|
+D0             |f              |    5.868|
+D0             |g              |    5.217|
+D1             |a              |    5.943|
+D1             |b              |    5.450|
+D1             |c              |    5.333|
+D1             |d              |    6.217|
+D1             |e              |    5.476|
+D1             |f              |    5.719|
+D1             |g              |    5.479|
+D2             |a              |    5.869|
+D2             |b              |    5.822|
+D2             |c              |    5.710|
+D2             |d              |    5.950|
+D2             |e              |    5.644|
+D2             |f              |    5.909|
+D2             |g              |    5.450|
+D3             |a              |    5.796|
+D3             |b              |    6.040|
+D3             |c              |    5.928|
+D3             |d              |    6.022|
+D3             |e              |    5.537|
+D3             |f              |    5.949|
+D3             |g              |    5.266|
+LE             |a              |    5.374|
+LE             |b              |    5.125|
+LE             |c              |    5.304|
+LE             |d              |    5.491|
+LE             |e              |    5.146|
+LE             |f              |    5.403|
+LE             |g              |    5.274|
+point          |P              |    4.791|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Oct 30 14:48:08 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5103 MB
+
+
+

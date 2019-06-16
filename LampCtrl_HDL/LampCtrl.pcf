@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Oct 16 14:27:45 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "AC18" LEVEL 1;
+COMP "S1" LOCATE = SITE "AA10" LEVEL 1;
+COMP "S2" LOCATE = SITE "AB10" LEVEL 1;
+COMP "S3" LOCATE = SITE "AA13" LEVEL 1;
+COMP "F" LOCATE = SITE "AF24" LEVEL 1;
+SCHEMATIC END;
+

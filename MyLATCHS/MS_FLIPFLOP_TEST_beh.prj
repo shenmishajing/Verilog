@@ -1,0 +1,5 @@
+verilog work "SR_LATCH.vf"
+verilog work "CSR_LATCH.vf"
+verilog work "MS_FLIPFLOP.v"
+verilog work "MS_FLIPFLOP_TEST.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

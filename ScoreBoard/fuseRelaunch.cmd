@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/Projects/Verilog/ScoreBoard/top_isim_beh.exe" -prj "Z:/Projects/Verilog/ScoreBoard/top_beh.prj" "work.top" "work.glbl" 

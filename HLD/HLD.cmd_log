@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "Z:/Projects/Verilog/HLD/HLD.xst" -ofn "Z:/Projects/Verilog/HLD/HLD.syr" 
+vhdtdtfi -lang verilog -prj HLD -o Z:/Projects/Verilog/HLD/HLD.tfi -lib work Z:/Projects/Verilog/HLD//HLD.v -module HLD -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work Z:/Projects/Verilog/HLD/HLD.v -lang verilog -prj HLD -o HLD.spl -module HLD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 HLD.spl Z:/Projects/Verilog/HLD/HLD.sym 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 HLD.ngc HLD.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o HLD_map.ncd HLD.ngd HLD.pcf 
+par -w -intstyle ise -ol high -mt off HLD_map.ncd HLD.ncd HLD.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml HLD.twx HLD.ncd -o HLD.twr HLD.pcf 
+bitgen -intstyle ise -f HLD.ut HLD.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim HLD.ngc HLD_synthesis.v 

@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue May 28 20:53:04 2019
+
+drc -z OExp09_IP2MCPU.ncd OExp09_IP2MCPU.pcf
+
+DRC detected 0 errors and 0 warnings.

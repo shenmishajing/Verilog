@@ -1,0 +1,6 @@
+[submodule "mipsasm"]
+	path = mipsasm
+	url = https://github.com/zhanghai/mipsasm.git
+[submodule "Sword_emulator"]
+	path = Sword_emulator
+	url = https://github.com/Keytoyze/Sword_emulator.git

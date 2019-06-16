@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl138_drc.vf -w Z:/Projects/Verilog/LampCtrl138/LampCtrl138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl138.vf -w Z:/Projects/Verilog/LampCtrl138/LampCtrl138.sch 

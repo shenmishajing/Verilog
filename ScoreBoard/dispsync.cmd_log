@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Z:/Projects/Verilog/ScoreBoard/dispsync.v -lang verilog -prj ScoreBoard -o dispsync.spl -module dispsync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 dispsync.spl Z:/Projects/Verilog/ScoreBoard/dispsync.sym 

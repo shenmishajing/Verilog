@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\Verilog\TankBattle_CPU\TankBattle_CPU.ncd
+OUTFILE=Z:\Verilog\TankBattle_CPU\TankBattle_CPU.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lfbg676
+WORKINGDIR=Z:\Verilog\TankBattle_CPU
+LICENSE=WebPack
+USER_INFO=__0_0_0

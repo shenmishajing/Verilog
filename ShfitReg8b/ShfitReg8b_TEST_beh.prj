@@ -1,0 +1,4 @@
+verilog work "D_FLIPFLOP.vf"
+verilog work "ShfitReg8b.v"
+verilog work "ShfitReg8b_TEST.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

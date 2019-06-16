@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Lampcontrol.vf -w Z:/Projects/Verilog/LampCtrl_HDL/Lampcontrol.sch 
+xst -intstyle ise -ifn "Z:/Projects/Verilog/LampCtrl_HDL/Lampcontrol.xst" -ofn "Z:/Projects/Verilog/LampCtrl_HDL/Lampcontrol.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 Lampcontrol.ngc Lampcontrol.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 Lampcontrol.ngc Lampcontrol.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 Lampcontrol.ngc Lampcontrol.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 Lampcontrol.ngc Lampcontrol.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 Lampcontrol.ngc Lampcontrol.ngd  

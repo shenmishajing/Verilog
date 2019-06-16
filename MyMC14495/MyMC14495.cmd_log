@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "Z:/Projects/Verilog/MyMC14495/MyMC14495.xst" -ofn "Z:/Projects/Verilog/MyMC14495/MyMC14495.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 MyMC14495.ngc MyMC14495.ngd  
+xst -intstyle ise -ifn "Z:/Projects/Verilog/MyMC14495/MyMC14495.xst" -ofn "Z:/Projects/Verilog/MyMC14495/MyMC14495.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 MyMC14495.ngc MyMC14495.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyMC14495_map.ncd MyMC14495.ngd MyMC14495.pcf 
+par -w -intstyle ise -ol high -mt off MyMC14495_map.ncd MyMC14495.ncd MyMC14495.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MyMC14495.twx MyMC14495.ncd -o MyMC14495.twr MyMC14495.pcf 
+bitgen -intstyle ise -f MyMC14495.ut MyMC14495.ncd 
+xst -intstyle ise -ifn "Z:/Projects/Verilog/MyMC14495/MyMC14495.xst" -ofn "Z:/Projects/Verilog/MyMC14495/MyMC14495.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 MyMC14495.ngc MyMC14495.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyMC14495_map.ncd MyMC14495.ngd MyMC14495.pcf 
+par -w -intstyle ise -ol high -mt off MyMC14495_map.ncd MyMC14495.ncd MyMC14495.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MyMC14495.twx MyMC14495.ncd -o MyMC14495.twr MyMC14495.pcf 
+bitgen -intstyle ise -f MyMC14495.ut MyMC14495.ncd 
+sch2sym -intstyle ise -family kintex7 -refsym MyMC14495 Z:/Projects/Verilog/MyMC14495/MyMC14495.sch Z:/Projects/Verilog/MyMC14495/MyMC14495.sym 

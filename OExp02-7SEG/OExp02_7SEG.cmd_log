@@ -1,0 +1,37 @@
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L OExp02_7SEG.ngc OExp02_7SEG.ngd  
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L OExp02_7SEG.ngc OExp02_7SEG.ngd  
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L OExp02_7SEG.ngc OExp02_7SEG.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp02_7SEG_map.ncd OExp02_7SEG.ngd OExp02_7SEG.pcf 
+par -w -intstyle ise -ol high -mt off OExp02_7SEG_map.ncd OExp02_7SEG.ncd OExp02_7SEG.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp02_7SEG.twx OExp02_7SEG.ncd -o OExp02_7SEG.twr OExp02_7SEG.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OExp02_7SEG.ut OExp02_7SEG.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L OExp02_7SEG.ngc OExp02_7SEG.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp02_7SEG_map.ncd OExp02_7SEG.ngd OExp02_7SEG.pcf 
+par -w -intstyle ise -ol high -mt off OExp02_7SEG_map.ncd OExp02_7SEG.ncd OExp02_7SEG.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp02_7SEG.twx OExp02_7SEG.ncd -o OExp02_7SEG.twr OExp02_7SEG.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OExp02_7SEG.ut OExp02_7SEG.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L OExp02_7SEG.ngc OExp02_7SEG.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp02_7SEG_map.ncd OExp02_7SEG.ngd OExp02_7SEG.pcf 
+par -w -intstyle ise -ol high -mt off OExp02_7SEG_map.ncd OExp02_7SEG.ncd OExp02_7SEG.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp02_7SEG.twx OExp02_7SEG.ncd -o OExp02_7SEG.twr OExp02_7SEG.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OExp02_7SEG.ut OExp02_7SEG.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.xst" -ofn "Z:/Verilog/OExp02-7SEG/OExp02_7SEG.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L OExp02_7SEG.ngc OExp02_7SEG.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp02_7SEG_map.ncd OExp02_7SEG.ngd OExp02_7SEG.pcf 
+par -w -intstyle ise -ol high -mt off OExp02_7SEG_map.ncd OExp02_7SEG.ncd OExp02_7SEG.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp02_7SEG.twx OExp02_7SEG.ncd -o OExp02_7SEG.twr OExp02_7SEG.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OExp02_7SEG.ut OExp02_7SEG.ncd 

@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "Z:/Projects/Verilog/MyLATCHS/SR_LATCH.xst" -ofn "Z:/Projects/Verilog/MyLATCHS/SR_LATCH.syr" 
+xst -intstyle ise -ifn "Z:/Projects/Verilog/MyLATCHS/SR_LATCH.xst" -ofn "Z:/Projects/Verilog/MyLATCHS/SR_LATCH.syr" 
+xst -intstyle ise -ifn "Z:/Projects/Verilog/MyLATCHS/SR_LATCH.xst" -ofn "Z:/Projects/Verilog/MyLATCHS/SR_LATCH.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim SR_LATCH.ngc SR_LATCH_synthesis.v 
+sch2sym -intstyle ise -family artix7 -refsym SR_LATCH Z:/Projects/Verilog/MyLATCHS/SR_LATCH.sch Z:/Projects/Verilog/MyLATCHS/SR_LATCH.sym 

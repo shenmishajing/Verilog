@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Logic2018\TankBattle\Top.ncd
+OUTFILE=D:\Logic2018\TankBattle\Top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=D:\Logic2018\TankBattle
+LICENSE=WebPack
+USER_INFO=__0_0_0

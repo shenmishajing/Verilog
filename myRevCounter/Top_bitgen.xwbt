@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\Projects\Verilog\myRevCounter\Top.ncd
+OUTFILE=Z:\Projects\Verilog\myRevCounter\Top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=Z:\Projects\Verilog\myRevCounter
+LICENSE=WebPack
+USER_INFO=__0_0_0

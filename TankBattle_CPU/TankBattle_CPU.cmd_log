@@ -1,0 +1,120 @@
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
+xst -intstyle ise -ifn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.xst" -ofn "Z:/Verilog/TankBattle_CPU/TankBattle_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ok.ucf -p xc7k160t-fbg676-2L TankBattle_CPU.ngc TankBattle_CPU.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TankBattle_CPU_map.ncd TankBattle_CPU.ngd TankBattle_CPU.pcf 
+par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd TankBattle_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TankBattle_CPU.twx TankBattle_CPU.ncd -o TankBattle_CPU.twr TankBattle_CPU.pcf -ucf ok.ucf 
+bitgen -intstyle ise -f TankBattle_CPU.ut TankBattle_CPU.ncd 
