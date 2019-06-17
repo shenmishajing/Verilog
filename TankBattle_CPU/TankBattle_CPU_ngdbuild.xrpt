@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Fri Jun 14 20:17:06 2019">
+  <application stringID="NgdBuild" timeStamp="Mon Jun 17 14:00:28 2019">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\CMake\bin;C:\Users\shenm\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jdk1.8.0_112\bin;C:\Program Files (x86)\Java\jdk1.8.0_112\jre\bin"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\shenm\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jdk1.8.0_112\bin;C:\Program Files (x86)\Java\jdk1.8.0_112\jre\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -78,11 +78,11 @@
         <item dataType="int" stringID="NGDBUILD_NUM_DSP48E1" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FD" value="284"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="107"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="1151"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="1150"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDCE_1" value="20"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="4259"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDP" value="2"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDPE_1" value="6"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="40"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDRE" value="179"/>
@@ -116,11 +116,11 @@
         <item dataType="int" stringID="NGDBUILD_NUM_DSP48E1" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FD" value="284"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="107"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="1151"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="1150"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDCE_1" value="20"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="4259"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDP" value="2"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDPE_1" value="6"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="40"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDRE" value="179"/>

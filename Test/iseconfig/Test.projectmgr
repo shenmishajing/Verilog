@@ -8,19 +8,20 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/MEMBANK Z:|Verilog|Test|MEMBANK.v</ClosedNode>
+         <ClosedNode>/TankBattle_CPU Z:|Verilog|Test|TankBattle_CPU.v/U1 - Muliti_CPU</ClosedNode>
          <ClosedNode>/TankBattle_CPU Z:|Verilog|Test|TankBattle_CPU.v/U5 - Multi_8CH32</ClosedNode>
          <ClosedNode>/TankBattle_CPU Z:|Verilog|Test|TankBattle_CPU.v/U6 - SSeg7_Dev</ClosedNode>
          <ClosedNode>/TankBattle_CPU Z:|Verilog|Test|TankBattle_CPU.v/U61 - Seg7_Dev</ClosedNode>
          <ClosedNode>/TankBattle_CPU Z:|Verilog|Test|TankBattle_CPU.v/U7 - SPIO</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TankBattle_CPU (Z:/Verilog/Test/TankBattle_CPU.v)</SelectedItem>
+         <SelectedItem>U2 - RAM_U (Z:/Verilog/Test/ipcore_dir/RAM_U.xco)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000181000000020000000000000000000000000200000064ffffffff000000810000000300000002000001810000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000131000000020000000000000000000000000200000064ffffffff000000810000000300000002000001310000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>TankBattle_CPU (Z:/Verilog/Test/TankBattle_CPU.v)</CurrentItem>
+      <CurrentItem>U2 - RAM_U (Z:/Verilog/Test/ipcore_dir/RAM_U.xco)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -83,13 +84,13 @@
          <ClosedNode>CORE Generator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -101,13 +102,13 @@
          <ClosedNode>/Test Z:|Verilog|Test|Test.v/uut - TankBattle_CPU/U7 - SPIO</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>U105 - RAM_U (Z:/Verilog/Test/ipcore_dir/RAM_U.xco)</SelectedItem>
+         <SelectedItem>Test (Z:/Verilog/Test/Test.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000195000000020000000000000000000000000200000064ffffffff000000810000000300000002000001950000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>U105 - RAM_U (Z:/Verilog/Test/ipcore_dir/RAM_U.xco)</CurrentItem>
+      <CurrentItem>Test (Z:/Verilog/Test/Test.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -143,12 +144,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>

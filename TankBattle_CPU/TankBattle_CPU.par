@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-TLUG266::  Fri Jun 14 20:19:34 2019
+DESKTOP-TLUG266::  Mon Jun 17 14:02:43 2019
 
 par -w -intstyle ise -ol high -mt off TankBattle_CPU_map.ncd TankBattle_CPU.ncd
 TankBattle_CPU.pcf 
@@ -27,24 +27,24 @@ Slice Logic Utilization:
     Number used as Latches:                     27
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      8,676 out of 101,400    8%
-    Number used as logic:                    8,656 out of 101,400    8%
-      Number using O6 output only:           7,577
+  Number of Slice LUTs:                      8,686 out of 101,400    8%
+    Number used as logic:                    8,657 out of 101,400    8%
+      Number using O6 output only:           7,579
       Number using O5 output only:             147
-      Number using O5 and O6:                  932
+      Number using O5 and O6:                  931
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  35,000    0%
-    Number used exclusively as route-thrus:     20
-      Number with same-slice register load:     10
+    Number used exclusively as route-thrus:     29
+      Number with same-slice register load:     19
       Number with same-slice carry load:        10
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,897 out of  25,350   11%
-  Number of LUT Flip Flop pairs used:        8,881
-    Number with an unused Flip Flop:         3,422 out of   8,881   38%
-    Number with an unused LUT:                 205 out of   8,881    2%
-    Number of fully used LUT-FF pairs:       5,254 out of   8,881   59%
+  Number of occupied Slices:                 2,798 out of  25,350   11%
+  Number of LUT Flip Flop pairs used:        8,887
+    Number with an unused Flip Flop:         3,437 out of   8,887   38%
+    Number with an unused LUT:                 201 out of   8,887    2%
+    Number of fully used LUT-FF pairs:       5,249 out of   8,887   59%
     Number of slice register sites lost
       to control set restrictions:               0 out of 202,800    0%
 
@@ -107,33 +107,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 16 secs 
+Starting initial Timing Analysis.  REAL time: 15 secs 
 Finished initial Timing Analysis.  REAL time: 16 secs 
 
 Starting Router
 
 
-Phase  1  : 70492 unrouted;      REAL time: 19 secs 
+Phase  1  : 70492 unrouted;      REAL time: 18 secs 
 
-Phase  2  : 52988 unrouted;      REAL time: 21 secs 
+Phase  2  : 52983 unrouted;      REAL time: 20 secs 
 
-Phase  3  : 21086 unrouted;      REAL time: 47 secs 
+Phase  3  : 21415 unrouted;      REAL time: 41 secs 
 
-Phase  4  : 21086 unrouted; (Setup:0, Hold:5680, Component Switching Limit:0)     REAL time: 52 secs 
+Phase  4  : 21415 unrouted; (Setup:0, Hold:9762, Component Switching Limit:0)     REAL time: 46 secs 
 
 Updating file: TankBattle_CPU.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:4855, Component Switching Limit:0)     REAL time: 1 mins 16 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:6235, Component Switching Limit:0)     REAL time: 1 mins 6 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:4855, Component Switching Limit:0)     REAL time: 1 mins 16 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:6235, Component Switching Limit:0)     REAL time: 1 mins 6 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:4855, Component Switching Limit:0)     REAL time: 1 mins 16 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:6235, Component Switching Limit:0)     REAL time: 1 mins 6 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:4855, Component Switching Limit:0)     REAL time: 1 mins 16 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:6235, Component Switching Limit:0)     REAL time: 1 mins 6 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 19 secs 
-Total REAL time to Router completion: 1 mins 19 secs 
-Total CPU time to Router completion: 1 mins 21 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 9 secs 
+Total REAL time to Router completion: 1 mins 9 secs 
+Total CPU time to Router completion: 1 mins 11 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -152,29 +152,29 @@ Generating Clock Report
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
 |clk_100MHz_IBUF_BUFG |              |      |      |            |             |
-|                     | BUFGCTRL_X0Y0| No   | 1662 |  0.472     |  1.683      |
+|                     | BUFGCTRL_X0Y0| No   | 1661 |  0.468     |  1.683      |
 +---------------------+--------------+------+------+------------+-------------+
-|    U8/clkdiv_1_BUFG | BUFGCTRL_X0Y2| No   |   26 |  0.181     |  1.404      |
+|    U8/clkdiv_1_BUFG | BUFGCTRL_X0Y2| No   |   26 |  0.171     |  1.402      |
 +---------------------+--------------+------+------+------------+-------------+
-|        Clk_CPU_BUFG |BUFGCTRL_X0Y29| No   |  189 |  0.291     |  1.513      |
+|        Clk_CPU_BUFG |BUFGCTRL_X0Y29| No   |  190 |  0.234     |  1.458      |
 +---------------------+--------------+------+------+------------+-------------+
-|        U9/clk1_BUFG |BUFGCTRL_X0Y31| No   |   13 |  0.010     |  1.619      |
+|        U9/clk1_BUFG |BUFGCTRL_X0Y31| No   |   14 |  0.053     |  1.617      |
 +---------------------+--------------+------+------+------------+-------------+
-|    U8/clkdiv_8_BUFG |BUFGCTRL_X0Y30| No   |   18 |  0.007     |  1.384      |
+|    U8/clkdiv_8_BUFG |BUFGCTRL_X0Y30| No   |   18 |  0.009     |  1.392      |
 +---------------------+--------------+------+------+------------+-------------+
-|         IO_clk_BUFG | BUFGCTRL_X0Y1| No   |   44 |  0.425     |  1.800      |
+|         IO_clk_BUFG | BUFGCTRL_X0Y1| No   |   43 |  0.422     |  1.800      |
 +---------------------+--------------+------+------+------------+-------------+
-|           U4/_n0637 |         Local|      |   23 |  0.000     |  0.784      |
+|           U4/_n0637 |         Local|      |   23 |  0.000     |  0.502      |
 +---------------------+--------------+------+------+------------+-------------+
-|             U2/mclk |         Local|      |   16 |  0.520     |  1.144      |
+|             U2/mclk |         Local|      |   16 |  1.181     |  1.663      |
 +---------------------+--------------+------+------+------------+-------------+
-|           U4/_n0655 |         Local|      |    3 |  0.000     |  0.664      |
+|           U4/_n0655 |         Local|      |    3 |  0.000     |  0.479      |
 +---------------------+--------------+------+------+------------+-------------+
-|           U4/_n0647 |         Local|      |    8 |  0.164     |  0.838      |
+|           U4/_n0647 |         Local|      |    8 |  0.205     |  0.560      |
 +---------------------+--------------+------+------+------------+-------------+
-|           U4/_n0651 |         Local|      |    4 |  0.000     |  0.366      |
+|           U4/_n0651 |         Local|      |    4 |  0.000     |  0.418      |
 +---------------------+--------------+------+------+------------+-------------+
-|           U4/_n0643 |         Local|      |    7 |  0.372     |  0.875      |
+|           U4/_n0643 |         Local|      |    7 |  0.332     |  0.799      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -194,8 +194,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10  | SETUP       |     2.144ns|     7.856ns|       0|           0
-  ns HIGH 50%                               | HOLD        |     0.049ns|            |       0|           0
+  TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10  | SETUP       |     2.688ns|     7.312ns|       0|           0
+  ns HIGH 50%                               | HOLD        |     0.000ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -206,8 +206,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 1 mins 23 secs 
-Total CPU time to PAR completion: 1 mins 25 secs 
+Total REAL time to PAR completion: 1 mins 13 secs 
+Total CPU time to PAR completion: 1 mins 14 secs 
 
 Peak Memory Usage:  5155 MB
 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Reading design: TankBattle_CPU.prj
 
@@ -731,7 +731,7 @@ Unit <SPIO> synthesized.
 Synthesizing Unit <clk_div>.
     Related source file is "\\mac\project\Verilog\TankBattle_CPU\clk_div.v".
     Found 32-bit register for signal <clkdiv>.
-    Found 32-bit adder for signal <clkdiv[31]_GND_114_o_add_0_OUT> created at line 32.
+    Found 32-bit adder for signal <clkdiv[31]_GND_115_o_add_0_OUT> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -750,7 +750,7 @@ WARNING:Xst:653 - Signal <counter2<32>> is used but never assigned. This sourcel
     Found 1-bit register for signal <sq0>.
     Found 1-bit register for signal <M0>.
     Found 1-bit register for signal <clr0>.
-    Found 33-bit subtractor for signal <counter0[32]_GND_116_o_sub_26_OUT> created at line 77.
+    Found 33-bit subtractor for signal <counter0[32]_GND_117_o_sub_26_OUT> created at line 77.
     Found 33-bit 4-to-1 multiplexer for signal <counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT> created at line 70.
     Found 1-bit comparator not equal for signal <n0017> created at line 76
     Summary:
@@ -774,16 +774,16 @@ WARNING:Xst:647 - Input <Blink> is never used. This port will be preserved and l
     Found 4-bit register for signal <B>.
     Found 10-bit register for signal <h_count>.
     Found 10-bit subtractor for signal <col> created at line 45.
-    Found 10-bit adder for signal <v_count[9]_GND_117_o_add_11_OUT> created at line 64.
-    Found 10-bit adder for signal <h_count[9]_GND_117_o_add_13_OUT> created at line 67.
-    Found 19-bit adder for signal <row[8]_GND_117_o_add_17_OUT> created at line 71.
+    Found 10-bit adder for signal <v_count[9]_GND_118_o_add_11_OUT> created at line 64.
+    Found 10-bit adder for signal <h_count[9]_GND_118_o_add_13_OUT> created at line 67.
+    Found 19-bit adder for signal <row[8]_GND_118_o_add_17_OUT> created at line 71.
     Found 9-bit subtractor for signal <row> created at line 44.
     Found 9x10-bit multiplier for signal <n0068> created at line 71.
     Found 10-bit comparator greater for signal <h_sync> created at line 46
     Found 10-bit comparator lessequal for signal <n0003> created at line 47
-    Found 10-bit comparator greater for signal <GND_117_o_col[9]_LessThan_5_o> created at line 51
+    Found 10-bit comparator greater for signal <GND_118_o_col[9]_LessThan_5_o> created at line 51
     Found 10-bit comparator greater for signal <col[9]_PWR_117_o_LessThan_6_o> created at line 51
-    Found 9-bit comparator greater for signal <GND_117_o_row[8]_LessThan_7_o> created at line 51
+    Found 9-bit comparator greater for signal <GND_118_o_row[8]_LessThan_7_o> created at line 51
     Found 9-bit comparator greater for signal <row[8]_PWR_117_o_LessThan_8_o> created at line 51
     Summary:
 	inferred   1 Multiplier(s).
@@ -806,7 +806,7 @@ WARNING:Xst:647 - Input <RD> is never used. This port will be preserved and left
     Found 1-bit register for signal <key_expand>.
     Found 1-bit register for signal <ps2clk0>.
     Found 1-bit register for signal <negedge_PS2_clk_shift>.
-    Found 4-bit adder for signal <num[3]_GND_119_o_add_1_OUT> created at line 71.
+    Found 4-bit adder for signal <num[3]_GND_120_o_add_1_OUT> created at line 71.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  29 D-type flip-flop(s).
@@ -998,7 +998,7 @@ Unit <ScanSync> synthesized (advanced).
 Synthesizing (advanced) Unit <VGAIO>.
 The following registers are absorbed into counter <h_count>: 1 register on signal <h_count>.
 The following registers are absorbed into counter <v_count>: 1 register on signal <v_count>.
-	Multiplier <Mmult_n0068> in block <VGAIO> and adder/subtractor <Madd_row[8]_GND_117_o_add_17_OUT> in block <VGAIO> are combined into a MAC<Maddsub_n0068>.
+	Multiplier <Mmult_n0068> in block <VGAIO> and adder/subtractor <Madd_row[8]_GND_118_o_add_17_OUT> in block <VGAIO> are combined into a MAC<Maddsub_n0068>.
 	The following registers are also absorbed by the MAC: <vga_addr> in block <VGAIO>.
 Unit <VGAIO> synthesized (advanced).
 
@@ -1304,11 +1304,11 @@ Primitive and Black Box Usage:
 # FlipFlops/Latches                : 6100
 #      FD                          : 284
 #      FDC                         : 107
-#      FDCE                        : 1151
+#      FDCE                        : 1150
 #      FDCE_1                      : 20
 #      FDE                         : 4259
 #      FDP                         : 2
-#      FDPE                        : 1
+#      FDPE                        : 2
 #      FDPE_1                      : 6
 #      FDR                         : 40
 #      FDRE                        : 179
@@ -1399,9 +1399,9 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                             | Buffer(FF name)                                                                                                                                | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(U3/XST_GND:G)                                                                                                                                                          | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B) | 182   |
-U2/U105/N1(U2/U105/XST_GND:G)                                                                                                                                                                                                                                              | NONE(U2/U105/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)  | 8     |
-U31/N1(U31/XST_GND:G)                                                                                                                                                                                                                                                      | NONE(U31/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)      | 8     |
+U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(U3/XST_GND:G)                                                                                                                                                          | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[49].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 182   |
+U2/U105/N1(U2/U105/XST_GND:G)                                                                                                                                                                                                                                              | NONE(U2/U105/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)  | 8     |
+U31/N1(U31/XST_GND:G)                                                                                                                                                                                                                                                      | NONE(U31/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)      | 8     |
 U2/MEM/N0(U2/MEM/XST_GND:G)                                                                                                                                                                                                                                                | NONE(U2/MEM/U102/Mram_data)                                                                                                                    | 4     |
 U2/MEM/N1(U2/MEM/XST_VCC:P)                                                                                                                                                                                                                                                | NONE(U2/MEM/U102/Mram_data)                                                                                                                    | 4     |
 U2/MEM/U102/BUS_0002(U2/MEM/U102/Mmux_BUS_000211:O)                                                                                                                                                                                                                        | NONE(U2/MEM/U102/Mram_data)                                                                                                                    | 2     |
@@ -1524,7 +1524,7 @@ Delay:               1.521ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE_1:C->Q           2   0.240   0.608  U7/GPIOf0_1 (U7/GPIOf0_1)
-     LUT6:I1->O           33   0.043   0.469  U10/_n0096<1>11 (U10/_n0096<1>1)
+     LUT6:I1->O           33   0.043   0.469  U10/_n0091<1>11 (U10/_n0091<1>1)
      FDCE:CE                   0.161          U10/counter0_Lock_0
     ----------------------------------------
     Total                      1.521ns (0.444ns logic, 1.077ns route)
@@ -1546,40 +1546,40 @@ Delay:               2.221ns (Levels of Logic = 35)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              4   0.236   0.367  U10/counter0_0 (U10/counter0_0)
-     LUT1:I0->O            1   0.043   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<0>_rt (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<0>_rt)
-     MUXCY:S->O            1   0.238   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<0> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<0>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<1> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<1>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<2> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<2>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<3> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<3>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<4> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<4>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<5> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<5>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<6> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<6>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<7> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<7>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<8> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<8>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<9> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<9>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<10> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<10>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<11> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<11>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<12> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<12>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<13> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<13>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<14> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<14>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<15> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<15>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<16> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<16>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<17> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<17>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<18> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<18>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<19> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<19>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<20> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<20>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<21> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<21>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<22> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<22>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<23> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<23>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<24> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<24>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<25> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<25>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<26> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<26>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<27> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<27>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<28> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<28>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<29> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<29>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<30> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<30>)
-     MUXCY:CI->O           0   0.013   0.000  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<31> (U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_cy<31>)
-     XORCY:CI->O           1   0.262   0.613  U10/Msub_counter0[32]_GND_116_o_sub_26_OUT_xor<32> (U10/counter0[32]_GND_116_o_sub_26_OUT<32>)
+     LUT1:I0->O            1   0.043   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<0>_rt (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<0>_rt)
+     MUXCY:S->O            1   0.238   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<0> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<1> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<2> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<3> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<4> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<5> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<6> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<7> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<8> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<9> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<10> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<11> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<12> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<13> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<14> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<14>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<15> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<15>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<16> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<16>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<17> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<17>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<18> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<18>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<19> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<19>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<20> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<20>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<21> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<21>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<22> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<22>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<23> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<23>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<24> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<24>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<25> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<25>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<26> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<26>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<27> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<27>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<28> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<28>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<29> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<29>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<30> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<30>)
+     MUXCY:CI->O           0   0.013   0.000  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<31> (U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_cy<31>)
+     XORCY:CI->O           1   0.262   0.613  U10/Msub_counter0[32]_GND_117_o_sub_26_OUT_xor<32> (U10/counter0[32]_GND_117_o_sub_26_OUT<32>)
      LUT6:I0->O            1   0.043   0.000  U10/Mmux_counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT262 (U10/counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT<32>)
      FDC:D                    -0.000          U10/counter0_32
     ----------------------------------------
@@ -2026,12 +2026,12 @@ clk_100MHz     |    4.999|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 51.00 secs
-Total CPU time to Xst completion: 50.94 secs
+Total REAL time to Xst completion: 44.00 secs
+Total CPU time to Xst completion: 44.70 secs
  
 --> 
 
-Total memory usage is 4763408 kilobytes
+Total memory usage is 4763456 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  241 (   0 filtered)
