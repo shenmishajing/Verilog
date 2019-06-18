@@ -107,6 +107,9 @@ always @(*) begin
             ram_addr = addr_bus[13:2];
             ram_data_in = Cpu_data2bus;
             data_ram_rd = ~mem_w;
+            if (~mem_w) begin
+                Cpu_data4bus = ram_data_out;	// read from RAM
+            end
         end
 
         4'h1: begin	// Vram (10000000 - 1fffffff, actually lower 4KB * 12bit VRAM)
@@ -115,31 +118,49 @@ always @(*) begin
             cpu_vram_addr = addr_bus[20:2];
             vram_data_in = Cpu_data2bus[11:0];
             vram_rd = ~mem_w;
+            if (~mem_w) begin
+                Cpu_data4bus = vga_rdn ? {20'h0, vram_out} : 32'h0;	//read from Vram
+            end
         end
 
         4'h2: begin	// PS2 (20000000 - 2fffffff)
             ps2_rd = ~mem_w;
             Peripheral_in = Cpu_data2bus;
+            if (~mem_w) begin
+                Cpu_data4bus = {ps2_ready, 23'h0, key};	//read from PS2
+            end
         end
 
         4'h3: begin	// source (30000000 - 3fffffff)
             source_addr = addr_bus[15:2];
             source_rd = ~mem_w;
+            if (~mem_w) begin
+                Cpu_data4bus = {20'h0, source_out};	//read from Source
+            end
         end
 
         4'h4: begin	// map (40000000 - 4fffffff)
             map_addr = addr_bus[9:2];
             map_rd = ~mem_w;
+            if (~mem_w) begin
+                Cpu_data4bus = {28'h0, map_out};	//read from Map
+            end
         end
 
         4'h5: begin	// win (50000000 - 5fffffff)
             win_addr = addr_bus[20:2];
             win_rd = ~mem_w;
+            if (~mem_w) begin
+                Cpu_data4bus = {20'h0, win_out};	//read from Win
+            end
         end
 
         4'h6: begin	// lose (60000000 - 6fffffff)
             lose_addr = addr_bus[20:2];
             lose_rd = ~mem_w;
+            if (~mem_w) begin
+                Cpu_data4bus = {20'h0, lose_out};	//read from Lose
+            end
         end
 
 
@@ -147,6 +168,9 @@ always @(*) begin
             GPIOe0000000_we = mem_w;
             Peripheral_in = Cpu_data2bus;
             GPIOe0000000_rd = ~mem_w;
+            if (~mem_w) begin
+                Cpu_data4bus = counter_out;	// read from Counter
+            end
         end
 
         4'hf: begin   				// LED   (ffffff00 - ffffffff0, 8 LEDs & counter, ffffff04-fffffff4)
@@ -154,25 +178,31 @@ always @(*) begin
                 counter_we = mem_w;
                 Peripheral_in = Cpu_data2bus;
                 counter_rd = ~mem_w;
+                if (~mem_w) begin
+                    Cpu_data4bus = counter_out;	// read from Counter
+                end
             end else begin					//ffffff00
                 GPIOf0000000_we = mem_w;
                 Peripheral_in = Cpu_data2bus;
                 GPIOf0000000_rd = ~mem_w;
+                if (~mem_w) begin
+                    Cpu_data4bus = {counter0_out, counter1_out,  counter2_out, 9'h000, BTN, SW};	//read from SW & BTN
+                end
             end
         end
     endcase
 
-    casex ({data_ram_rd, GPIOe0000000_rd, counter_rd, GPIOf0000000_rd, ps2_rd, vram_rd, source_rd, map_rd, win_rd, lose_rd})
-        10'b1xxxxxxxxx: Cpu_data4bus = ram_data_out;	// read from RAM
-        10'bx1xxxxxxxx: Cpu_data4bus = counter_out;	// read from Counter
-        10'bxx1xxxxxxx: Cpu_data4bus = counter_out;	// read from Counter
-        10'bxxx1xxxxxx: Cpu_data4bus = {counter0_out, counter1_out,  counter2_out, 9'h000, BTN, SW};	//read from SW & BTN
-        10'bxxxx1xxxxx: Cpu_data4bus = {ps2_ready, 23'h0, key};	//read from PS2
-        10'bxxxxx1xxxx: Cpu_data4bus = vga_rdn ? {20'h0, vram_out} : 32'h0;	//read from Vram
-        10'bxxxxxx1xxx: Cpu_data4bus = {20'h0, source_out};	//read from Source
-        10'bxxxxxxx1xx: Cpu_data4bus = {28'h0, map_out};	//read from Map
-        10'bxxxxxxxx1x: Cpu_data4bus = {20'h0, win_out};	//read from Win
-        10'bxxxxxxxxx1: Cpu_data4bus = {20'h0, lose_out};	//read from Lose
-    endcase
+    // casex ({data_ram_rd, GPIOe0000000_rd, counter_rd, GPIOf0000000_rd, ps2_rd, vram_rd, source_rd, map_rd, win_rd, lose_rd})
+    //     10'b1xxxxxxxxx: Cpu_data4bus = ram_data_out;	// read from RAM
+    //     10'bx1xxxxxxxx: Cpu_data4bus = counter_out;	// read from Counter
+    //     10'bxx1xxxxxxx: Cpu_data4bus = counter_out;	// read from Counter
+    //     10'bxxx1xxxxxx: Cpu_data4bus = {counter0_out, counter1_out,  counter2_out, 9'h000, BTN, SW};	//read from SW & BTN
+    //     10'bxxxx1xxxxx: Cpu_data4bus = {ps2_ready, 23'h0, key};	//read from PS2
+    //     10'bxxxxx1xxxx: Cpu_data4bus = vga_rdn ? {20'h0, vram_out} : 32'h0;	//read from Vram
+    //     10'bxxxxxx1xxx: Cpu_data4bus = {20'h0, source_out};	//read from Source
+    //     10'bxxxxxxx1xx: Cpu_data4bus = {28'h0, map_out};	//read from Map
+    //     10'bxxxxxxxx1x: Cpu_data4bus = {20'h0, win_out};	//read from Win
+    //     10'bxxxxxxxxx1: Cpu_data4bus = {20'h0, lose_out};	//read from Lose
+    // endcase
 end
 endmodule

@@ -1137,12 +1137,12 @@ LAB2:    t2 = (t0 + 6640);
     t6 = (t0 + 6800);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
-    xsi_vlog_bit_copy(t5, 0, t8, 0, 16);
-    *((int *)t9) = xsi_vlogfile_sscanf(t4, 128, ng2, 2, t0, (char)118, t5, 16);
+    xsi_vlog_bit_copy(t5, 0, t8, 0, 12);
+    *((int *)t9) = xsi_vlogfile_sscanf(t4, 96, ng2, 2, t0, (char)118, t5, 12);
     t10 = (t9 + 4);
     *((int *)t10) = 0;
     t11 = (t0 + 6800);
-    xsi_vlogvar_assign_value(t11, t5, 0, 0, 16);
+    xsi_vlogvar_assign_value(t11, t5, 0, 0, 12);
     memset(t1, 0, 8);
     t12 = (t9 + 4);
     t13 = *((unsigned int *)t12);
@@ -1174,7 +1174,7 @@ LAB9:    t2 = (t0 + 6800);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
     t6 = (t0 + 5360);
-    xsi_vlogvar_assign_value(t6, t4, 0, 0, 16);
+    xsi_vlogvar_assign_value(t6, t4, 0, 0, 12);
     t2 = ((char*)((ng0)));
     t3 = (t0 + 5840);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 14);
@@ -1188,9 +1188,9 @@ LAB9:    t2 = (t0 + 6800);
     t3 = (t0 + 6800);
     t4 = (t3 + 56U);
     t6 = *((char **)t4);
-    xsi_vlog_mul_concat(t1, 32, 16, t2, 1U, t6, 16);
+    xsi_vlog_mul_concat(t1, 24, 12, t2, 1U, t6, 12);
     t7 = (t0 + 6000);
-    xsi_vlogvar_assign_value(t7, t1, 0, 0, 16);
+    xsi_vlogvar_assign_value(t7, t1, 0, 0, 12);
     t2 = ((char*)((ng0)));
     t3 = (t0 + 6160);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 14);
@@ -1208,7 +1208,7 @@ LAB3:    *((unsigned int *)t1) = 1;
 LAB7:
 LAB10:    t25 = ((char*)((ng0)));
     t26 = (t0 + 6800);
-    xsi_vlogvar_assign_value(t26, t25, 0, 0, 16);
+    xsi_vlogvar_assign_value(t26, t25, 0, 0, 12);
     goto LAB9;
 
 }
@@ -1239,7 +1239,7 @@ LAB4:
 LAB5:    t4 = (t0 + 4000U);
     t5 = *((char **)t4);
     t4 = (t0 + 5360);
-    xsi_vlogvar_assign_value(t4, t5, 0, 0, 16);
+    xsi_vlogvar_assign_value(t4, t5, 0, 0, 12);
     t2 = (t0 + 4480U);
     t3 = *((char **)t2);
     t2 = (t0 + 5840);
@@ -1257,9 +1257,9 @@ LAB5:    t4 = (t0 + 4000U);
 }
 
 
-extern void xilinxcorelib_ver_m_00000000001358910285_2424649474_init()
+extern void xilinxcorelib_ver_m_00000000001358910285_4092804232_init()
 {
 	static char *pe[] = {(void *)Cont_1671_0,(void *)Cont_1677_1,(void *)Cont_1681_2,(void *)Initial_1686_3,(void *)Always_1705_4};
-	xsi_register_didat("xilinxcorelib_ver_m_00000000001358910285_2424649474", "isim/Test_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000001358910285_2424649474.didat");
+	xsi_register_didat("xilinxcorelib_ver_m_00000000001358910285_4092804232", "isim/Test_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000001358910285_4092804232.didat");
 	xsi_register_executes(pe);
 }

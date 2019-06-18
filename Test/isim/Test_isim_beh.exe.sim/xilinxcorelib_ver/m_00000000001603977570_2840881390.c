@@ -257,7 +257,7 @@ LAB5:    t4 = (t0 + 13992U);
     t2 = (t0 + 12392U);
     t3 = *((char **)t2);
     t2 = (t0 + 24312);
-    xsi_vlogvar_assign_value(t2, t3, 0, 0, 16);
+    xsi_vlogvar_assign_value(t2, t3, 0, 0, 12);
     goto LAB2;
 
 }
@@ -296,7 +296,7 @@ LAB2:    t2 = (t0 + 21672U);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
     memset(t7, 0, 8);
-    t8 = 65535U;
+    t8 = 4095U;
     t9 = t8;
     t10 = (t3 + 4);
     t11 = *((unsigned int *)t3);
@@ -308,7 +308,7 @@ LAB2:    t2 = (t0 + 21672U);
     *((unsigned int *)t7) = (t14 | t8);
     t15 = *((unsigned int *)t13);
     *((unsigned int *)t13) = (t15 | t9);
-    xsi_driver_vfirst_trans(t2, 0, 15);
+    xsi_driver_vfirst_trans(t2, 0, 11);
     t16 = (t0 + 28584);
     *((int *)t16) = 1;
 
@@ -634,11 +634,11 @@ LAB1:    return;
 }
 
 
-extern void xilinxcorelib_ver_m_00000000001603977570_4177165616_init()
+extern void xilinxcorelib_ver_m_00000000001603977570_2840881390_init()
 {
 	static char *pe[] = {(void *)Always_3891_0,(void *)Cont_4117_1,(void *)Cont_4118_2,(void *)Cont_4119_3,(void *)Cont_4120_4,(void *)Cont_4121_5,(void *)Cont_4122_6,(void *)Cont_4132_7};
 	static char *se[] = {(void *)sp_log2roundup,(void *)sp_divroundup};
-	xsi_register_didat("xilinxcorelib_ver_m_00000000001603977570_4177165616", "isim/Test_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000001603977570_4177165616.didat");
+	xsi_register_didat("xilinxcorelib_ver_m_00000000001603977570_2840881390", "isim/Test_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000001603977570_2840881390.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }

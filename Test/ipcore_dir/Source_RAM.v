@@ -44,7 +44,7 @@ module Source_RAM(
 
 input clka;
 input [13 : 0] addra;
-output [15 : 0] douta;
+output [11 : 0] douta;
 
 // synthesis translate_off
 
@@ -87,8 +87,8 @@ output [15 : 0] douta;
     .C_PRIM_TYPE(1),
     .C_READ_DEPTH_A(13500),
     .C_READ_DEPTH_B(13500),
-    .C_READ_WIDTH_A(16),
-    .C_READ_WIDTH_B(16),
+    .C_READ_WIDTH_A(12),
+    .C_READ_WIDTH_B(12),
     .C_RST_PRIORITY_A("CE"),
     .C_RST_PRIORITY_B("CE"),
     .C_RST_TYPE("SYNC"),
@@ -107,8 +107,8 @@ output [15 : 0] douta;
     .C_WRITE_DEPTH_B(13500),
     .C_WRITE_MODE_A("WRITE_FIRST"),
     .C_WRITE_MODE_B("WRITE_FIRST"),
-    .C_WRITE_WIDTH_A(16),
-    .C_WRITE_WIDTH_B(16),
+    .C_WRITE_WIDTH_A(12),
+    .C_WRITE_WIDTH_B(12),
     .C_XDEVICEFAMILY("kintex7")
   )
   inst (

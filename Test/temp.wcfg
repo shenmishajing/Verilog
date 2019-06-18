@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="62" />
+   <WVObjectSize size="73" />
    <wvobject fp_name="/Test/ram_addr" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">ram_addr[11:0]</obj_property>
       <obj_property name="ObjectShortName">ram_addr[11:0]</obj_property>
@@ -90,7 +90,7 @@
    <wvobject fp_name="/Test/source_addr" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">source_addr[13:0]</obj_property>
       <obj_property name="ObjectShortName">source_addr[13:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Test/source_out" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">source_out[11:0]</obj_property>
@@ -100,11 +100,11 @@
    <wvobject fp_name="/Test/map_addr" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">map_addr[7:0]</obj_property>
       <obj_property name="ObjectShortName">map_addr[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Test/map_out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">map_out[4:0]</obj_property>
-      <obj_property name="ObjectShortName">map_out[4:0]</obj_property>
+      <obj_property name="ElementShortName">map_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">map_out[3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Test/Addr_out" type="array" db_ref_id="1">
@@ -126,6 +126,50 @@
       <obj_property name="ElementShortName">Data_in[31:0]</obj_property>
       <obj_property name="ObjectShortName">Data_in[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/mem_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_w</obj_property>
+      <obj_property name="ObjectShortName">mem_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/ps2_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ps2_rd</obj_property>
+      <obj_property name="ObjectShortName">ps2_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/data_ram_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_ram_rd</obj_property>
+      <obj_property name="ObjectShortName">data_ram_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/GPIOf0000000_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">GPIOf0000000_rd</obj_property>
+      <obj_property name="ObjectShortName">GPIOf0000000_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/GPIOe0000000_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">GPIOe0000000_rd</obj_property>
+      <obj_property name="ObjectShortName">GPIOe0000000_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/counter_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_rd</obj_property>
+      <obj_property name="ObjectShortName">counter_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/vram_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vram_rd</obj_property>
+      <obj_property name="ObjectShortName">vram_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/source_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">source_rd</obj_property>
+      <obj_property name="ObjectShortName">source_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/map_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">map_rd</obj_property>
+      <obj_property name="ObjectShortName">map_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/win_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">win_rd</obj_property>
+      <obj_property name="ObjectShortName">win_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test/lose_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lose_rd</obj_property>
+      <obj_property name="ObjectShortName">lose_rd</obj_property>
    </wvobject>
    <wvobject fp_name="/Test/MIO_ready" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">MIO_ready</obj_property>

@@ -57,8 +57,8 @@ assign Buzzer = 1'b1;
 assign N0     = 1'b0;
 
 wire Clk_CPU, mem_w, data_ram_we, vram_we, IO_clk, GPIOE00, GPIOF00, counter0_out, counter1_out, counter2_out, counter_we, MIO_ready, vga_rdn, ps2_ready, ps2_rd;
-wire[3:0] BTN_OK, Pulse;
-wire[4:0] Key_out, state, map_out;
+wire[3:0] BTN_OK, Pulse, map_out;
+wire[4:0] Key_out, state;
 wire[7:0] point_out, LE_out, blink, key, testkey, map_addr;
 wire[11:0] vram_data_in, vram_out, source_out, win_out, lose_out;
 wire[11:0] ram_addr;

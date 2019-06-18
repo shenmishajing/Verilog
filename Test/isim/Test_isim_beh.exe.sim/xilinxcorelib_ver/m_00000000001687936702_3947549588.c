@@ -50,7 +50,7 @@ LAB4:
 LAB5:    t4 = (t0 + 1888U);
     t5 = *((char **)t4);
     t4 = (t0 + 2768);
-    xsi_vlogvar_assign_value(t4, t5, 0, 0, 16);
+    xsi_vlogvar_assign_value(t4, t5, 0, 0, 12);
     t2 = (t0 + 2368U);
     t3 = *((char **)t2);
     t2 = (t0 + 3248);
@@ -68,9 +68,9 @@ LAB5:    t4 = (t0 + 1888U);
 }
 
 
-extern void xilinxcorelib_ver_m_00000000001687936702_2614408128_init()
+extern void xilinxcorelib_ver_m_00000000001687936702_3947549588_init()
 {
 	static char *pe[] = {(void *)Always_1930_0};
-	xsi_register_didat("xilinxcorelib_ver_m_00000000001687936702_2614408128", "isim/Test_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000001687936702_2614408128.didat");
+	xsi_register_didat("xilinxcorelib_ver_m_00000000001687936702_3947549588", "isim/Test_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000001687936702_3947549588.didat");
 	xsi_register_executes(pe);
 }

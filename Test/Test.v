@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   19:12:10 06/14/2019
+// Create Date:   16:40:23 06/17/2019
 // Design Name:   TankBattle_CPU
 // Module Name:   Z:/Verilog/Test/Test.v
 // Project Name:  Test
@@ -52,11 +52,22 @@ module Test;
 	wire [13:0] source_addr;
 	wire [11:0] source_out;
 	wire [7:0] map_addr;
-	wire [4:0] map_out;
+	wire [3:0] map_out;
 	wire [31:0] Addr_out;
 	wire [31:0] inst;
 	wire [31:0] PC;
 	wire [31:0] Data_in;
+	wire mem_w;
+	wire ps2_rd;
+	wire data_ram_rd;
+	wire GPIOf0000000_rd;
+	wire GPIOe0000000_rd;
+	wire counter_rd;
+	wire vram_rd;
+	wire source_rd;
+	wire map_rd;
+	wire win_rd;
+	wire lose_rd;
 	wire MIO_ready;
 	wire [4:0] state;
 	wire [31:0] rdata_A;
@@ -122,6 +133,17 @@ module Test;
 		.inst(inst), 
 		.PC(PC), 
 		.Data_in(Data_in), 
+		.mem_w(mem_w), 
+		.ps2_rd(ps2_rd), 
+		.data_ram_rd(data_ram_rd), 
+		.GPIOf0000000_rd(GPIOf0000000_rd), 
+		.GPIOe0000000_rd(GPIOe0000000_rd), 
+		.counter_rd(counter_rd), 
+		.vram_rd(vram_rd), 
+		.source_rd(source_rd), 
+		.map_rd(map_rd), 
+		.win_rd(win_rd), 
+		.lose_rd(lose_rd), 
 		.MIO_ready(MIO_ready), 
 		.state(state), 
 		.rdata_A(rdata_A), 
@@ -175,7 +197,7 @@ module Test;
       
 	always begin
 		clk_100MHz = ~clk_100MHz;
-		#10;
+		#1;
 	end
       
 endmodule

@@ -45,11 +45,22 @@ module TankBattle_CPU(
            output[13:0] source_addr,
            output[11:0] source_out,
            output[7:0] map_addr,
-           output[4:0] map_out,
+           output[3:0] map_out,
            output[31:0] Addr_out,
            output[31:0] inst,
            output[31:0] PC,
            output[31:0] Data_in,
+           output mem_w,
+           output ps2_rd,
+           output data_ram_rd,
+           output GPIOf0000000_rd,
+           output GPIOe0000000_rd,
+           output counter_rd,
+           output vram_rd,
+           output source_rd,
+           output map_rd,
+           output win_rd,
+           output lose_rd,
            output MIO_ready,
            output[4:0] state,
            output[31:0]rdata_A,
@@ -91,7 +102,7 @@ assign V5     = 1'b1;
 assign Buzzer = 1'b1;
 assign N0     = 1'b0;
 
-wire mem_w, data_ram_we, vram_we, IO_clk, GPIOE00, GPIOF00, counter0_out, counter1_out, counter2_out, counter_we, ps2_ready, ps2_rd;
+wire data_ram_we, vram_we, IO_clk, GPIOE00, GPIOF00, counter0_out, counter1_out, counter2_out, counter_we, ps2_ready;
 wire[3:0] BTN_OK, Pulse;
 wire[4:0] Key_out;
 wire[7:0] point_out, LE_out, blink, key, testkey;
@@ -227,6 +238,15 @@ MIO_BUS U4(
             .key(key),
             .ps2_ready(ps2_ready),
             .ps2_rd(ps2_rd),
+            .data_ram_rd(data_ram_rd),
+            .GPIOf0000000_rd(GPIOf0000000_rd),
+            .GPIOe0000000_rd(GPIOe0000000_rd),
+            .counter_rd(counter_rd),
+            .vram_rd(vram_rd),
+            .source_rd(source_rd),
+            .map_rd(map_rd),
+            .win_rd(win_rd),
+            .lose_rd(lose_rd),
             .GPIOf0000000_we(GPIOF00),
             .GPIOe0000000_we(GPIOE00),
             .counter_we(counter_we),

@@ -50,7 +50,7 @@
 Source_RAM your_instance_name (
   .clka(clka), // input clka
   .addra(addra), // input [13 : 0] addra
-  .douta(douta) // output [15 : 0] douta
+  .douta(douta) // output [11 : 0] douta
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

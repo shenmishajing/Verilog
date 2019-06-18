@@ -8,10 +8,13 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find Z:/Verilog/Test/ipcore_dir/TankBattle - ??.coe</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Improperly formatted COE file Y:\test_vga.coe. Parameter assignments</arg>
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for Z:\Verilog\Test\ipcore_dir\TankBattle - ??.coe</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   should be separated by a &quot;;&quot; character.</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">    Found an illegal assignment on line 3.</arg>
 </msg>
 
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;RAM_U&apos; already exists in the project. Output products for this core may be overwritten.</arg>
@@ -26,10 +29,10 @@
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file Z:/Verilog/Test/ipcore_dir/tmp/_cg/RAM_U/doc/blk_mem_gen_v7_3_vinfo.html with file from view xilinx_documentation</arg>
 </msg>
 
-<msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
+<msg type="info" file="sim" num="949" delta="old" >Finished generation of ASY schematic symbol.
 </msg>
 
-<msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
+<msg type="info" file="sim" num="948" delta="old" >Finished FLIST file generation.
 </msg>
 
 </messages>

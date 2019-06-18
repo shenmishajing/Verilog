@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-06-17T13:40:41</DateModified>
+  <DateModified>2019-06-17T17:15:13</DateModified>
   <ModuleName>TankBattle_CPU</ModuleName>
   <SummaryTimeStamp>2019-06-14T18:13:37</SummaryTimeStamp>
   <SavedFilePath>Z:/Verilog/Test/iseconfig/TankBattle_CPU.xreport</SavedFilePath>

@@ -87,11 +87,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1560514016" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1560514016">
+    <transform xil_pn:end_ts="1560766755" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1560766755">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1560514016" xil_pn:in_ck="-8243820488370992082" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1560514016">
+    <transform xil_pn:end_ts="1560766755" xil_pn:in_ck="-8243820488370992082" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1560766755">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BYTE2WORD.v"/>
@@ -136,11 +136,11 @@
       <outfile xil_pn:name="srl32.v"/>
       <outfile xil_pn:name="xor32.v"/>
     </transform>
-    <transform xil_pn:end_ts="1560514016" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="913006707827752215" xil_pn:start_ts="1560514016">
+    <transform xil_pn:end_ts="1560766755" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="913006707827752215" xil_pn:start_ts="1560766755">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1560514018" xil_pn:in_ck="-5151672946550148036" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1958382092482752011" xil_pn:start_ts="1560514016">
+    <transform xil_pn:end_ts="1560766757" xil_pn:in_ck="-5151672946550148036" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1958382092482752011" xil_pn:start_ts="1560766755">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.vf"/>
@@ -148,7 +148,7 @@
       <outfile xil_pn:name="SSeg7_Dev.vf"/>
       <outfile xil_pn:name="Seg7_Dev.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1560686976" xil_pn:in_ck="-104411881137480076" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4836674583096263600" xil_pn:start_ts="1560686975">
+    <transform xil_pn:end_ts="1560766757" xil_pn:in_ck="-104411881137480076" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4836674583096263600" xil_pn:start_ts="1560766757">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/Map_RAM.ngc"/>
@@ -160,7 +160,7 @@
       <outfile xil_pn:name="ipcore_dir/VRAM_B.ngc"/>
       <outfile xil_pn:name="ipcore_dir/VRAM_B.v"/>
     </transform>
-    <transform xil_pn:end_ts="1560686976" xil_pn:in_ck="8518844258290736262" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1560686976">
+    <transform xil_pn:end_ts="1560766757" xil_pn:in_ck="8518844258290736262" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1560766757">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.vf"/>
@@ -213,7 +213,7 @@
       <outfile xil_pn:name="srl32.v"/>
       <outfile xil_pn:name="xor32.v"/>
     </transform>
-    <transform xil_pn:end_ts="1560686984" xil_pn:in_ck="8518844258290736262" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2237313821028643064" xil_pn:start_ts="1560686976">
+    <transform xil_pn:end_ts="1560766764" xil_pn:in_ck="8518844258290736262" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2237313821028643064" xil_pn:start_ts="1560766757">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -225,7 +225,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1560692816" xil_pn:in_ck="-2576212295781016369" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1132998935097483893" xil_pn:start_ts="1560692816">
+    <transform xil_pn:end_ts="1560766764" xil_pn:in_ck="-2576212295781016369" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1132998935097483893" xil_pn:start_ts="1560766764">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -241,6 +241,8 @@
     <transform xil_pn:end_ts="1560512497" xil_pn:in_ck="-5151672946550148036" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7595138224241450852" xil_pn:start_ts="1560512495">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU.vf"/>
       <outfile xil_pn:name="MC14495_ZJU.vf"/>
       <outfile xil_pn:name="SSeg7_Dev.vf"/>
@@ -310,11 +312,10 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="TankBattle_CPU.bld"/>
-      <outfile xil_pn:name="TankBattle_CPU_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
