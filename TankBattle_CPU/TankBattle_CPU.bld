@@ -38,10 +38,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   1
 
-Total memory usage is 4583508 kilobytes
+Total memory usage is 4569384 kilobytes
 
 Writing NGD file "TankBattle_CPU.ngd" ...
-Total REAL time to NGDBUILD completion:  20 sec
-Total CPU time to NGDBUILD completion:   20 sec
+Total REAL time to NGDBUILD completion:  19 sec
+Total CPU time to NGDBUILD completion:   19 sec
 
 Writing NGDBUILD log file "TankBattle_CPU.bld"...

@@ -85,7 +85,6 @@ always @ (*) begin
     R        <=  read ? vram_out[3:0] : 4'h0; // 4-bit red
     G        <=  read ? vram_out[7:4] : 4'h0; // 4-bit green
     B        <=  read ? vram_out[11:8] : 4'h0; // 4-bit blue
-
 end
 
 endmodule
