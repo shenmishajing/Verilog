@@ -1,8 +1,10 @@
-Z:\Verilog\TankBattle_CPU\TankBattle_CPU.ngc 1561195775
+Z:\Verilog\TankBattle_CPU\TankBattle_CPU.ngc 1561344136
 Z:\Verilog\TankBattle_CPU/SAnti_jitter.ngc 1560669855
 ipcore_dir/VRAM_B.ngc 1560669855
 ipcore_dir/Source_RAM.ngc 1560669855
 ipcore_dir/Map_RAM.ngc 1560669855
+ipcore_dir/Win_RAM.ngc 1561341856
+ipcore_dir/Lose_RAM.ngc 1561343640
 Z:\Verilog\TankBattle_CPU/SEnter_2_32.ngc 1560669855
 Z:\Verilog\TankBattle_CPU/BYTE2WORD.ngc 1560669855
 Z:\Verilog\TankBattle_CPU/UARTER.ngc 1560669855

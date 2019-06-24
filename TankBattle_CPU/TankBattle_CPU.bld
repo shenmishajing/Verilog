@@ -10,6 +10,8 @@ Loading design module "Z:\Verilog\TankBattle_CPU/SAnti_jitter.ngc"...
 Loading design module "ipcore_dir/VRAM_B.ngc"...
 Loading design module "ipcore_dir/Source_RAM.ngc"...
 Loading design module "ipcore_dir/Map_RAM.ngc"...
+Loading design module "ipcore_dir/Win_RAM.ngc"...
+Loading design module "ipcore_dir/Lose_RAM.ngc"...
 Loading design module "Z:\Verilog\TankBattle_CPU/SEnter_2_32.ngc"...
 Loading design module "Z:\Verilog\TankBattle_CPU/BYTE2WORD.ngc"...
 Loading design module "Z:\Verilog\TankBattle_CPU/UARTER.ngc"...
@@ -25,6 +27,32 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'U33/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'U33/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'U34/dina<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'U2/U103/enm' has no driver
 
 Partition Implementation Status
@@ -36,12 +64,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   1
+  Number of warnings:  27
 
-Total memory usage is 4569384 kilobytes
+Total memory usage is 4619956 kilobytes
 
 Writing NGD file "TankBattle_CPU.ngd" ...
-Total REAL time to NGDBUILD completion:  19 sec
-Total CPU time to NGDBUILD completion:   19 sec
+Total REAL time to NGDBUILD completion:  33 sec
+Total CPU time to NGDBUILD completion:   33 sec
 
 Writing NGDBUILD log file "TankBattle_CPU.bld"...

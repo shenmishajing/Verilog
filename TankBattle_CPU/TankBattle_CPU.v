@@ -69,9 +69,6 @@ wire[31:0] inst, PC, Addr_out, Data_in, Data_out, ram_data_in, ram_data_out, CPU
 
 assign IO_clk = ~Clk_CPU;
 
-assign win_out = 12'h0f0;
-assign lose_out = 12'h00f;
-
 Muliti_CPU U1(
                .clk(Clk_CPU),
                .reset(rst),
@@ -105,7 +102,7 @@ MEMBANK U2(
             .MWR(),									//MEM BANKд��?
             .MEN(),									//MEM BANKʹ��
             .MAddr(),							//MEM BANK���ʵ�ַ
-            .MBDi(),							//MEM BANKд������:PROG=ʱΪ�������
+            .MBDi(),							//MEM BANKд������:PROG=ʱΪ�������
             .MDo(ram_data_out),							//MEM BANK��������
             .TESTD()
         );
@@ -138,17 +135,17 @@ Map_RAM U32(
             .douta(map_out)
         );
 
-// Win_RAM U33(
-//             .addra(win_addr),
-//             .clka(clk_100MHz),
-//             .douta(win_out)
-//         );
+Win_RAM U33(
+            .addra(win_addr),
+            .clka(clk_100MHz),
+            .douta(win_out)
+        );
 
-// Lose_RAM U34(
-//             .addra(lose_addr),
-//             .clka(clk_100MHz),
-//             .douta(lose_out)
-//         );
+Lose_RAM U34(
+             .addra(lose_addr),
+             .clka(clk_100MHz),
+             .douta(lose_out)
+         );
 
 MIO_BUS U4(
             .clk(clk_100MHz),

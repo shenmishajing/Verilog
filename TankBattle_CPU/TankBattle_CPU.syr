@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -194,12 +194,16 @@ Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\MIO_BUS.v" into lib
 Parsing module <MIO_BUS>.
 Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\MEMBANK.v" into library work
 Parsing module <MEMBANK>.
+Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\Win_RAM.v" into library work
+Parsing module <Win_RAM>.
 Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\VRAM_B.v" into library work
 Parsing module <VRAM_B>.
 Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\Source_RAM.v" into library work
 Parsing module <Source_RAM>.
 Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\Map_RAM.v" into library work
 Parsing module <Map_RAM>.
+Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\Lose_RAM.v" into library work
+Parsing module <Lose_RAM>.
 Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\Counter_3_IO.v" into library work
 Parsing module <Counter_x>.
 Analyzing Verilog file "\\mac\project\Verilog\TankBattle_CPU\clk_div.v" into library work
@@ -210,8 +214,10 @@ Parsing module <TankBattle_CPU>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 229: Port LED_out is not connected to this instance
-WARNING:HDLCompiler:1016 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 332: Port counter_set is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 138: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 144: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 226: Port LED_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 329: Port counter_set is not connected to this instance
 
 Elaborating module <TankBattle_CPU>.
 WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 55: Assignment to V5 ignored, since the identifier is never used
@@ -274,10 +280,14 @@ WARNING:HDLCompiler:1499 - "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\Sour
 Elaborating module <Map_RAM>.
 WARNING:HDLCompiler:1499 - "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\Map_RAM.v" Line 39: Empty module <Map_RAM> remains a black box.
 
+Elaborating module <Win_RAM>.
+WARNING:HDLCompiler:1499 - "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\Win_RAM.v" Line 39: Empty module <Win_RAM> remains a black box.
+
+Elaborating module <Lose_RAM>.
+WARNING:HDLCompiler:1499 - "\\mac\project\Verilog\TankBattle_CPU\ipcore_dir\Lose_RAM.v" Line 39: Empty module <Lose_RAM> remains a black box.
+
 Elaborating module <MIO_BUS>.
 WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\MIO_BUS.v" Line 83: Assignment to data_ram_rd ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 180: Assignment to win_addr ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 181: Assignment to lose_addr ignored, since the identifier is never used
 
 Elaborating module <Multi_8CH32>.
 
@@ -321,7 +331,7 @@ Elaborating module <clk_div>.
 
 Elaborating module <SAnti_jitter>.
 WARNING:HDLCompiler:1499 - "\\mac\project\Verilog\TankBattle_CPU\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
-WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 259: Assignment to Pulse ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 256: Assignment to Pulse ignored, since the identifier is never used
 
 Elaborating module <Counter_x>.
 WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
@@ -331,13 +341,13 @@ Elaborating module <VGAIO>.
 WARNING:HDLCompiler:413 - "\\mac\project\Verilog\TankBattle_CPU\VGAIO.v" Line 73: Result of 21-bit expression is truncated to fit in 19-bit target.
 
 Elaborating module <PS2IO>.
-WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 303: Assignment to testkey ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 300: Assignment to testkey ignored, since the identifier is never used
 
 Elaborating module <SEnter_2_32>.
 WARNING:HDLCompiler:1499 - "\\mac\project\Verilog\TankBattle_CPU\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
-WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 316: Assignment to Ai ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 317: Assignment to Bi ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 318: Assignment to blink ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 313: Assignment to Ai ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 314: Assignment to Bi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 315: Assignment to blink ignored, since the identifier is never used
 
 Elaborating module <Seg7_Dev>.
 
@@ -350,7 +360,9 @@ Elaborating module <ScanSync>.
 Elaborating module <Seg_map>.
 
 Elaborating module <PIO>.
-WARNING:HDLCompiler:552 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 90: Input port enm is not connected on this instance
+WARNING:HDLCompiler:552 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 87: Input port enm is not connected on this instance
+WARNING:HDLCompiler:552 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 138: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" Line 144: Input port wea[0] is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -358,24 +370,22 @@ WARNING:HDLCompiler:552 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v
 
 Synthesizing Unit <TankBattle_CPU>.
     Related source file is "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v".
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 75: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 90: Output port <MAddr> of the instance <U2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 90: Output port <MBDi> of the instance <U2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 90: Output port <TESTD> of the instance <U2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 90: Output port <TxEnd> of the instance <U2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 90: Output port <mclk> of the instance <U2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 90: Output port <MWR> of the instance <U2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 90: Output port <MEN> of the instance <U2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 153: Output port <win_addr> of the instance <U4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 153: Output port <lose_addr> of the instance <U4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 229: Output port <LED_out> of the instance <U7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 250: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 296: Output port <testkey> of the instance <U13> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 309: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 309: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 309: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 332: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 332: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 72: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 87: Output port <MAddr> of the instance <U2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 87: Output port <MBDi> of the instance <U2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 87: Output port <TESTD> of the instance <U2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 87: Output port <TxEnd> of the instance <U2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 87: Output port <mclk> of the instance <U2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 87: Output port <MWR> of the instance <U2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 87: Output port <MEN> of the instance <U2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 226: Output port <LED_out> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 247: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 293: Output port <testkey> of the instance <U13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 306: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 306: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 306: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 329: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\project\Verilog\TankBattle_CPU\TankBattle_CPU.v" line 329: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <TankBattle_CPU> synthesized.
@@ -643,7 +653,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <source_addr<0>>. Latches may be 
 WARNING:Xst:737 - Found 1-bit latch for signal <lose_addr<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred  60 Latch(s).
-	inferred  25 Multiplexer(s).
+	inferred  27 Multiplexer(s).
 Unit <MIO_BUS> synthesized.
 
 Synthesizing Unit <Multi_8CH32>.
@@ -726,7 +736,7 @@ Unit <SPIO> synthesized.
 Synthesizing Unit <clk_div>.
     Related source file is "\\mac\project\Verilog\TankBattle_CPU\clk_div.v".
     Found 32-bit register for signal <clkdiv>.
-    Found 32-bit adder for signal <clkdiv[31]_GND_109_o_add_0_OUT> created at line 32.
+    Found 32-bit adder for signal <clkdiv[31]_GND_111_o_add_0_OUT> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -745,7 +755,7 @@ WARNING:Xst:653 - Signal <counter2<32>> is used but never assigned. This sourcel
     Found 1-bit register for signal <sq0>.
     Found 1-bit register for signal <M0>.
     Found 1-bit register for signal <clr0>.
-    Found 33-bit subtractor for signal <counter0[32]_GND_111_o_sub_26_OUT> created at line 77.
+    Found 33-bit subtractor for signal <counter0[32]_GND_113_o_sub_26_OUT> created at line 77.
     Found 33-bit 4-to-1 multiplexer for signal <counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT> created at line 70.
     Found 1-bit comparator not equal for signal <n0017> created at line 76
     Summary:
@@ -763,16 +773,16 @@ WARNING:Xst:647 - Input <Blink> is never used. This port will be preserved and l
     Found 10-bit register for signal <h_count>.
     Found 10-bit subtractor for signal <row> created at line 42.
     Found 11-bit subtractor for signal <col> created at line 43.
-    Found 10-bit adder for signal <v_count[9]_GND_112_o_add_10_OUT> created at line 62.
-    Found 10-bit adder for signal <h_count[9]_GND_112_o_add_12_OUT> created at line 65.
+    Found 10-bit adder for signal <v_count[9]_GND_114_o_add_10_OUT> created at line 62.
+    Found 10-bit adder for signal <h_count[9]_GND_114_o_add_12_OUT> created at line 65.
     Found 20-bit adder for signal <n0046> created at line 73.
     Found 10x10-bit multiplier for signal <n0055> created at line 73.
     Found 10-bit comparator greater for signal <h_sync> created at line 44
     Found 10-bit comparator lessequal for signal <n0003> created at line 45
-    Found 11-bit comparator greater for signal <GND_112_o_col[10]_LessThan_5_o> created at line 49
-    Found 11-bit comparator greater for signal <col[10]_GND_112_o_LessThan_6_o> created at line 49
-    Found 10-bit comparator greater for signal <GND_112_o_row[9]_LessThan_7_o> created at line 49
-    Found 10-bit comparator greater for signal <row[9]_GND_112_o_LessThan_8_o> created at line 49
+    Found 11-bit comparator greater for signal <GND_114_o_col[10]_LessThan_5_o> created at line 49
+    Found 11-bit comparator greater for signal <col[10]_GND_114_o_LessThan_6_o> created at line 49
+    Found 10-bit comparator greater for signal <GND_114_o_row[9]_LessThan_7_o> created at line 49
+    Found 10-bit comparator greater for signal <row[9]_GND_114_o_LessThan_8_o> created at line 49
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   5 Adder/Subtractor(s).
@@ -795,7 +805,7 @@ WARNING:Xst:647 - Input <RD> is never used. This port will be preserved and left
     Found 1-bit register for signal <key_expand>.
     Found 1-bit register for signal <ps2clk0>.
     Found 1-bit register for signal <negedge_PS2_clk_shift>.
-    Found 4-bit adder for signal <num[3]_GND_114_o_add_1_OUT> created at line 71.
+    Found 4-bit adder for signal <num[3]_GND_116_o_add_1_OUT> created at line 71.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  29 D-type flip-flop(s).
@@ -882,7 +892,7 @@ Macro Statistics
  10-bit comparator greater                             : 3
  10-bit comparator lessequal                           : 1
  11-bit comparator greater                             : 2
-# Multiplexers                                         : 98
+# Multiplexers                                         : 100
  1-bit 2-to-1 multiplexer                              : 10
  1-bit 8-to-1 multiplexer                              : 2
  10-bit 2-to-1 multiplexer                             : 2
@@ -891,7 +901,7 @@ Macro Statistics
  3-bit 2-to-1 multiplexer                              : 1
  3-bit 4-to-1 multiplexer                              : 1
  32-bit 12-to-1 multiplexer                            : 1
- 32-bit 2-to-1 multiplexer                             : 47
+ 32-bit 2-to-1 multiplexer                             : 49
  32-bit 31-to-1 multiplexer                            : 2
  32-bit 4-to-1 multiplexer                             : 3
  32-bit 8-to-1 multiplexer                             : 2
@@ -920,6 +930,8 @@ Reading core <SAnti_jitter.ngc>.
 Reading core <ipcore_dir/VRAM_B.ngc>.
 Reading core <ipcore_dir/Source_RAM.ngc>.
 Reading core <ipcore_dir/Map_RAM.ngc>.
+Reading core <ipcore_dir/Win_RAM.ngc>.
+Reading core <ipcore_dir/Lose_RAM.ngc>.
 Reading core <SEnter_2_32.ngc>.
 Reading core <BYTE2WORD.ngc>.
 Reading core <UARTER.ngc>.
@@ -930,6 +942,8 @@ Loading core <SAnti_jitter> for timing and area information for instance <U9>.
 Loading core <VRAM_B> for timing and area information for instance <U3>.
 Loading core <Source_RAM> for timing and area information for instance <U31>.
 Loading core <Map_RAM> for timing and area information for instance <U32>.
+Loading core <Win_RAM> for timing and area information for instance <U33>.
+Loading core <Lose_RAM> for timing and area information for instance <U34>.
 Loading core <SEnter_2_32> for timing and area information for instance <M4>.
 Loading core <BYTE2WORD> for timing and area information for instance <U103>.
 Loading core <UARTER> for timing and area information for instance <MEM>.
@@ -1041,7 +1055,7 @@ Macro Statistics
  10-bit comparator greater                             : 3
  10-bit comparator lessequal                           : 1
  11-bit comparator greater                             : 2
-# Multiplexers                                         : 158
+# Multiplexers                                         : 160
  1-bit 2-to-1 multiplexer                              : 75
  1-bit 8-to-1 multiplexer                              : 2
  12-bit 2-to-1 multiplexer                             : 2
@@ -1049,7 +1063,7 @@ Macro Statistics
  3-bit 2-to-1 multiplexer                              : 1
  3-bit 4-to-1 multiplexer                              : 1
  32-bit 12-to-1 multiplexer                            : 1
- 32-bit 2-to-1 multiplexer                             : 47
+ 32-bit 2-to-1 multiplexer                             : 49
  32-bit 31-to-1 multiplexer                            : 2
  32-bit 4-to-1 multiplexer                             : 3
  32-bit 8-to-1 multiplexer                             : 2
@@ -1133,44 +1147,6 @@ Optimizing unit <VGAIO> ...
 Optimizing unit <PIO> ...
 
 Optimizing unit <Seg7_Dev> ...
-WARNING:Xst:2677 - Node <U4/win_addr_1> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_1> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_2> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_2> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_3> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_3> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_4> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_4> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_5> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_5> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_6> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_6> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_7> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_7> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_8> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_8> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_9> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_9> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_10> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_10> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_11> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_11> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_12> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_13> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_12> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_13> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_14> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_15> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_15> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_14> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_16> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_17> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_16> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_18> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_18> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_17> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/lose_addr_0> of sequential type is unconnected in block <TankBattle_CPU>.
-WARNING:Xst:2677 - Node <U4/win_addr_0> of sequential type is unconnected in block <TankBattle_CPU>.
 WARNING:Xst:2677 - Node <U7/GPIOf0_2> of sequential type is unconnected in block <TankBattle_CPU>.
 WARNING:Xst:2677 - Node <U7/GPIOf0_3> of sequential type is unconnected in block <TankBattle_CPU>.
 WARNING:Xst:2677 - Node <U7/GPIOf0_4> of sequential type is unconnected in block <TankBattle_CPU>.
@@ -1209,22 +1185,22 @@ WARNING:Xst:2677 - Node <U71/GPIOf0_3> of sequential type is unconnected in bloc
 WARNING:Xst:2677 - Node <U71/GPIOf0_2> of sequential type is unconnected in block <TankBattle_CPU>.
 WARNING:Xst:2677 - Node <U71/GPIOf0_1> of sequential type is unconnected in block <TankBattle_CPU>.
 WARNING:Xst:2677 - Node <U71/GPIOf0_0> of sequential type is unconnected in block <TankBattle_CPU>.
-INFO:Xst:2261 - The FF/Latch <U7/LED_5> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_5> 
 INFO:Xst:2261 - The FF/Latch <U7/LED_3> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_3> 
 INFO:Xst:2261 - The FF/Latch <U7/LED_0> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_0> 
+INFO:Xst:2261 - The FF/Latch <U7/LED_1> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_1> 
 INFO:Xst:2261 - The FF/Latch <U7/LED_2> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_2> 
 INFO:Xst:2261 - The FF/Latch <U7/LED_4> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_4> 
 INFO:Xst:2261 - The FF/Latch <U7/LED_6> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_6> 
 INFO:Xst:2261 - The FF/Latch <U7/LED_7> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_7> 
-INFO:Xst:2261 - The FF/Latch <U7/LED_1> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_1> 
+INFO:Xst:2261 - The FF/Latch <U7/LED_5> in Unit <TankBattle_CPU> is equivalent to the following FF/Latch, which will be removed : <U71/LED_5> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block TankBattle_CPU, actual ratio is 7.
 INFO:Xst:2260 - The FF/Latch <U104/rdPtr_0> in Unit <U2/MEM> is equivalent to the following 27 FFs/Latches : <U104/rdPtr_0_1> <U104/rdPtr_0_2> <U104/rdPtr_0_3> <U104/rdPtr_0_4> <U104/rdPtr_0_5> <U104/rdPtr_0_6> <U104/rdPtr_0_7> <U104/rdPtr_0_8> <U104/rdPtr_0_9> <U104/rdPtr_0_10> <U104/rdPtr_0_11> <U104/rdPtr_0_12> <U104/rdPtr_0_13> <U104/rdPtr_0_14> <U104/rdPtr_0_15> <U104/rdPtr_0_16> <U104/rdPtr_0_17> <U104/rdPtr_0_18> <U104/rdPtr_0_19> <U104/rdPtr_0_20> <U104/rdPtr_0_21> <U104/rdPtr_0_22> <U104/rdPtr_0_23> <U104/rdPtr_0_24> <U104/rdPtr_0_25> <U104/rdPtr_0_26> <U104/rdPtr_0_27> 
-INFO:Xst:2260 - The FF/Latch <U104/wrPtr_3> in Unit <U2/MEM> is equivalent to the following FF/Latch : <U104/wrPtr_3_1> 
 INFO:Xst:2260 - The FF/Latch <U104/rdPtr_1> in Unit <U2/MEM> is equivalent to the following 8 FFs/Latches : <U104/rdPtr_1_1> <U104/rdPtr_1_2> <U104/rdPtr_1_3> <U104/rdPtr_1_4> <U104/rdPtr_1_5> <U104/rdPtr_1_6> <U104/rdPtr_1_7> <U104/rdPtr_1_8> 
 INFO:Xst:2260 - The FF/Latch <U104/wrPtr_6> in Unit <U2/MEM> is equivalent to the following FF/Latch : <U104/wrPtr_6_1> 
+INFO:Xst:2260 - The FF/Latch <U104/wrPtr_3> in Unit <U2/MEM> is equivalent to the following FF/Latch : <U104/wrPtr_3_1> 
 INFO:Xst:2260 - The FF/Latch <U104/rdPtr_0> in Unit <U2/MEM> is equivalent to the following 27 FFs/Latches : <U104/rdPtr_0_1> <U104/rdPtr_0_2> <U104/rdPtr_0_3> <U104/rdPtr_0_4> <U104/rdPtr_0_5> <U104/rdPtr_0_6> <U104/rdPtr_0_7> <U104/rdPtr_0_8> <U104/rdPtr_0_9> <U104/rdPtr_0_10> <U104/rdPtr_0_11> <U104/rdPtr_0_12> <U104/rdPtr_0_13> <U104/rdPtr_0_14> <U104/rdPtr_0_15> <U104/rdPtr_0_16> <U104/rdPtr_0_17> <U104/rdPtr_0_18> <U104/rdPtr_0_19> <U104/rdPtr_0_20> <U104/rdPtr_0_21> <U104/rdPtr_0_22> <U104/rdPtr_0_23> <U104/rdPtr_0_24> <U104/rdPtr_0_25> <U104/rdPtr_0_26> <U104/rdPtr_0_27> 
 INFO:Xst:2260 - The FF/Latch <U104/wrPtr_3> in Unit <U2/MEM> is equivalent to the following FF/Latch : <U104/wrPtr_3_1> 
 INFO:Xst:2260 - The FF/Latch <U104/rdPtr_1> in Unit <U2/MEM> is equivalent to the following 8 FFs/Latches : <U104/rdPtr_1_1> <U104/rdPtr_1_2> <U104/rdPtr_1_3> <U104/rdPtr_1_4> <U104/rdPtr_1_5> <U104/rdPtr_1_6> <U104/rdPtr_1_7> <U104/rdPtr_1_8> 
@@ -1232,12 +1208,12 @@ INFO:Xst:2260 - The FF/Latch <U104/wrPtr_6> in Unit <U2/MEM> is equivalent to th
 FlipFlop U1/x_ctrl/state_FSM_FFd4 has been replicated 2 time(s)
 FlipFlop U1/x_ctrl/state_FSM_FFd5 has been replicated 1 time(s)
 FlipFlop U1/x_datapath/IR/Q_16 has been replicated 3 time(s)
-FlipFlop U1/x_datapath/IR/Q_17 has been replicated 3 time(s)
+FlipFlop U1/x_datapath/IR/Q_17 has been replicated 2 time(s)
 FlipFlop U1/x_datapath/IR/Q_18 has been replicated 1 time(s)
 FlipFlop U1/x_datapath/IR/Q_19 has been replicated 1 time(s)
 FlipFlop U1/x_datapath/IR/Q_20 has been replicated 1 time(s)
-FlipFlop U1/x_datapath/IR/Q_21 has been replicated 1 time(s)
-FlipFlop U1/x_datapath/IR/Q_22 has been replicated 1 time(s)
+FlipFlop U1/x_datapath/IR/Q_21 has been replicated 4 time(s)
+FlipFlop U1/x_datapath/IR/Q_22 has been replicated 3 time(s)
 FlipFlop U1/x_datapath/IR/Q_25 has been replicated 1 time(s)
 FlipFlop U7/LED_7 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop U7/LED_6 has been replicated 1 time(s) to handle iob=true attribute.
@@ -1254,8 +1230,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1370
- Flip-Flops                                            : 1370
+# Registers                                            : 1374
+ Flip-Flops                                            : 1374
 
 =========================================================================
 
@@ -1278,41 +1254,41 @@ Top Level Output File Name         : TankBattle_CPU.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 10691
+# BELS                             : 11369
 #      AND2                        : 10
 #      AND3                        : 99
 #      AND4                        : 81
-#      GND                         : 8
+#      GND                         : 10
 #      INV                         : 114
 #      LUT1                        : 136
 #      LUT2                        : 77
-#      LUT3                        : 1312
-#      LUT4                        : 443
-#      LUT5                        : 4713
-#      LUT6                        : 2939
+#      LUT3                        : 1356
+#      LUT4                        : 464
+#      LUT5                        : 4864
+#      LUT6                        : 3376
 #      MUXCY                       : 274
-#      MUXF7                       : 86
+#      MUXF7                       : 107
 #      OR2                         : 63
 #      OR3                         : 27
 #      OR4                         : 36
-#      VCC                         : 10
+#      VCC                         : 12
 #      XORCY                       : 263
-# FlipFlops/Latches                : 6069
+# FlipFlops/Latches                : 6125
 #      FD                          : 282
 #      FDC                         : 120
-#      FDCE                        : 1165
+#      FDCE                        : 1169
 #      FDCE_1                      : 20
-#      FDE                         : 4259
+#      FDE                         : 4273
 #      FDP                         : 2
 #      FDPE                        : 2
 #      FDPE_1                      : 6
 #      FDR                         : 17
 #      FDRE                        : 150
 #      FDSE                        : 24
-#      LD                          : 22
-# RAMS                             : 116
-#      RAMB18E1                    : 5
-#      RAMB36E1                    : 111
+#      LD                          : 60
+# RAMS                             : 324
+#      RAMB18E1                    : 7
+#      RAMB36E1                    : 317
 # Clock Buffers                    : 6
 #      BUFG                        : 6
 # IO Buffers                       : 77
@@ -1328,16 +1304,16 @@ Selected Device : 7k160tfbg676-2l
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            6061  out of  202800     2%  
- Number of Slice LUTs:                 9734  out of  101400     9%  
-    Number used as Logic:              9734  out of  101400     9%  
+ Number of Slice Registers:            6117  out of  202800     3%  
+ Number of Slice LUTs:                10387  out of  101400    10%  
+    Number used as Logic:             10387  out of  101400    10%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  10006
-   Number with an unused Flip Flop:    3945  out of  10006    39%  
-   Number with an unused LUT:           272  out of  10006     2%  
-   Number of fully used LUT-FF pairs:  5789  out of  10006    57%  
-   Number of unique control sets:       188
+ Number of LUT Flip Flop pairs used:  10709
+   Number with an unused Flip Flop:    4592  out of  10709    42%  
+   Number with an unused LUT:           322  out of  10709     3%  
+   Number of fully used LUT-FF pairs:  5795  out of  10709    54%  
+   Number of unique control sets:       192
 
 IO Utilization: 
  Number of IOs:                          77
@@ -1345,8 +1321,8 @@ IO Utilization:
     IOB Flip Flops/Latches:               8
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:              114  out of    325    35%  
-    Number using Block RAM only:        114
+ Number of Block RAM/FIFO:              321  out of    325    98%  
+    Number using Block RAM only:        321
  Number of BUFG/BUFGCTRLs:                6  out of     32    18%  
  Number of DSP48E1s:                      1  out of    600     0%  
 
@@ -1371,10 +1347,12 @@ Clock Information:
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                                           | Load  |
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-clk_100MHz                         | IBUF+BUFG                                                                                                                                       | 4780  |
-U4/_n0534(U4/_n0534<31>1:O)        | NONE(*)(U4/map_addr_1)                                                                                                                          | 8     |
-U4/_n0530(U4/_n0530<31>1:O)        | NONE(*)(U4/source_addr_1)                                                                                                                       | 14    |
-Clk_CPU(U8/Mmux_Clk_CPU11:O)       | BUFG(*)(U1/x_datapath/PC/Q_31)                                                                                                                  | 1153  |
+clk_100MHz                         | IBUF+BUFG                                                                                                                                       | 5002  |
+U4/_n0526(U4/_n0526<31>1:O)        | NONE(*)(U4/source_addr_1)                                                                                                                       | 14    |
+U4/_n0530(U4/_n0530<31>1:O)        | NONE(*)(U4/map_addr_1)                                                                                                                          | 8     |
+U4/_n0534(U4/_n0534<31>1:O)        | NONE(*)(U4/win_addr_1)                                                                                                                          | 19    |
+U4/_n0538(U4/_n0538<31>1:O)        | NONE(*)(U4/lose_addr_1)                                                                                                                         | 19    |
+Clk_CPU(U8/Mmux_Clk_CPU11:O)       | BUFG(*)(U1/x_datapath/PC/Q_31)                                                                                                                  | 1157  |
 IO_clk(IO_clk1:O)                  | BUFG(*)(U5/cpu_blink_7)                                                                                                                         | 127   |
 U8/clkdiv_8                        | BUFG                                                                                                                                            | 35    |
 U8/clkdiv_1                        | BUFG                                                                                                                                            | 20    |
@@ -1382,7 +1360,7 @@ U9/clk1                            | BUFG                                       
 M4/push(M4/push1:O)                | NONE(*)(M4/state_0)                                                                                                                             | 3     |
 U2/U103/mclk(U2/U103/Mmux_mclk11:O)| NONE(*)(U2/U105/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 4     |
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-(*) These 6 clock signal(s) are generated by combinatorial logic,
+(*) These 8 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1392,9 +1370,11 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                             | Buffer(FF name)                                                                                                                                | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(U3/XST_GND:G)                                                                                                                                                          | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B)| 182   |
-U2/U105/N1(U2/U105/XST_GND:G)                                                                                                                                                                                                                                              | NONE(U2/U105/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)  | 8     |
-U31/N1(U31/XST_GND:G)                                                                                                                                                                                                                                                      | NONE(U31/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)      | 8     |
+U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(U3/XST_GND:G)                                                                                                                                                          | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 182   |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(U33/XST_GND:G)                                                                                                                                                        | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)     | 182   |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(U34/XST_GND:G)                                                                                                                                                        | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B) | 182   |
+U2/U105/N1(U2/U105/XST_GND:G)                                                                                                                                                                                                                                              | NONE(U2/U105/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)  | 8     |
+U31/N1(U31/XST_GND:G)                                                                                                                                                                                                                                                      | NONE(U31/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)      | 8     |
 U2/MEM/N0(U2/MEM/XST_GND:G)                                                                                                                                                                                                                                                | NONE(U2/MEM/U102/Mram_data)                                                                                                                    | 4     |
 U2/MEM/N1(U2/MEM/XST_VCC:P)                                                                                                                                                                                                                                                | NONE(U2/MEM/U102/Mram_data)                                                                                                                    | 4     |
 U2/MEM/U102/BUS_0002(U2/MEM/U102/Mmux_BUS_000211:O)                                                                                                                                                                                                                        | NONE(U2/MEM/U102/Mram_data)                                                                                                                    | 2     |
@@ -1422,15 +1402,63 @@ U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].
 U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/cascadelatb_tmp(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
 U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/cascadelata_tmp(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
 U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/cascadelatb_tmp(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/cascadelata_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/cascadelatb_tmp(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U33/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/cascadelata_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/cascadelatb_tmp(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)    | NONE(U34/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 5.917ns (Maximum Frequency: 168.992MHz)
+   Minimum period: 5.975ns (Maximum Frequency: 167.354MHz)
    Minimum input arrival time before clock: 2.109ns
-   Maximum output required time after clock: 7.062ns
+   Maximum output required time after clock: 7.058ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1454,7 +1482,7 @@ Delay:               4.999ns (Levels of Logic = 9)
     ----------------------------------------  ------------
      FDE:C->Q            102   0.236   0.746  SW_OK_6 (SW_OK<6>)
      end scope: 'U9:SW_OK<6>'
-     LUT5:I0->O            1   0.043   0.000  U5/MUX1_DispData/Mmux_o23_G (N471)
+     LUT5:I0->O            1   0.043   0.000  U5/MUX1_DispData/Mmux_o23_G (N396)
      MUXF7:I1->O          12   0.178   0.400  U5/MUX1_DispData/Mmux_o23 (Disp_num<31>)
      INV:I->O             11   0.317   0.551  U6/SM1/M7/MSEG/XLXI_1 (U6/SM1/M7/MSEG/XLXN_14)
      AND4:I3->O            2   0.161   0.500  U6/SM1/M7/MSEG/XLXI_5 (U6/SM1/M7/MSEG/XLXN_119)
@@ -1470,36 +1498,35 @@ Delay:               4.999ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_CPU'
-  Clock period: 5.917ns (frequency: 168.992MHz)
-  Total number of paths / destination ports: 8110210 / 2221
+  Clock period: 5.975ns (frequency: 167.354MHz)
+  Total number of paths / destination ports: 7994266 / 2229
 -------------------------------------------------------------------------
-Delay:               5.917ns (Levels of Logic = 12)
-  Source:            U1/x_datapath/regs/register_31_231 (FF)
+Delay:               5.975ns (Levels of Logic = 11)
+  Source:            U1/x_datapath/regs/register_31_249 (FF)
   Destination:       U1/x_datapath/PC/Q_31 (FF)
   Source Clock:      Clk_CPU rising
   Destination Clock: Clk_CPU rising
 
-  Data Path: U1/x_datapath/regs/register_31_231 to U1/x_datapath/PC/Q_31
+  Data Path: U1/x_datapath/regs/register_31_249 to U1/x_datapath/PC/Q_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             3   0.236   0.625  U1/x_datapath/regs/register_31_231 (U1/x_datapath/regs/register_31_231)
-     LUT6:I0->O            1   0.043   0.522  U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_888 (U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_888)
-     LUT6:I2->O            3   0.043   0.507  U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_329 (U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_329)
-     LUT6:I3->O           62   0.043   0.474  U1/x_datapath/MUX3/Mmux_o301 (U1/x_datapath/Alu_B<7>)
-     MUXF7:S->O            2   0.234   0.410  U1/x_datapath/x_ALU/Sh5101 (U1/x_datapath/x_ALU/Sh510)
-     LUT6:I4->O            2   0.043   0.355  U1/x_datapath/x_ALU/Sh3311 (U1/x_datapath/x_ALU/Sh331)
-     LUT6:I5->O            1   0.043   0.000  U1/x_datapath/x_ALU/MUXALU/Mmux_o284_F (N460)
-     MUXF7:I0->O           1   0.176   0.350  U1/x_datapath/x_ALU/MUXALU/Mmux_o284 (U1/x_datapath/x_ALU/MUXALU/Mmux_o283)
-     LUT6:I5->O            3   0.043   0.362  U1/x_datapath/x_ALU/MUXALU/Mmux_o286 (U1/x_datapath/res<5>)
-     LUT6:I5->O            1   0.043   0.350  U1/x_datapath/x_ALU/MUXALU/Mmux_o213_SW0 (N371)
-     LUT6:I5->O            1   0.043   0.405  U1/x_datapath/x_ALU/ALU_Zero/o<31>4 (U1/x_datapath/x_ALU/ALU_Zero/o<31>3)
-     LUT6:I4->O           32   0.043   0.480  U1/x_datapath/MIO_ready_PCWrite_AND_130_o_rstpot (U1/x_datapath/MIO_ready_PCWrite_AND_130_o_rstpot)
+     FDCE:C->Q             3   0.236   0.625  U1/x_datapath/regs/register_31_249 (U1/x_datapath/regs/register_31_249)
+     LUT6:I0->O            1   0.043   0.522  U1/x_datapath/regs/Mmux_R_addr_A[4]_register[31][31]_wide_mux_1_OUT_852 (U1/x_datapath/regs/Mmux_R_addr_A[4]_register[31][31]_wide_mux_1_OUT_852)
+     LUT6:I2->O            2   0.043   0.410  U1/x_datapath/regs/Mmux_R_addr_A[4]_register[31][31]_wide_mux_1_OUT_317 (U1/x_datapath/regs/Mmux_R_addr_A[4]_register[31][31]_wide_mux_1_OUT_317)
+     LUT6:I4->O            6   0.043   0.641  U1/x_datapath/MUX4/Mmux_o181 (U1/x_datapath/Alu_A<25>)
+     LUT6:I0->O            4   0.043   0.422  U1/x_datapath/x_ALU/Sh231 (U1/x_datapath/x_ALU/Sh23)
+     LUT6:I4->O            2   0.043   0.500  U1/x_datapath/x_ALU/Sh551 (U1/x_datapath/x_ALU/Sh55)
+     LUT6:I3->O            1   0.043   0.350  U1/x_datapath/x_ALU/MUXALU/Mmux_o304 (U1/x_datapath/x_ALU/MUXALU/Mmux_o303)
+     LUT6:I5->O            3   0.043   0.615  U1/x_datapath/x_ALU/MUXALU/Mmux_o306 (U1/x_datapath/res<7>)
+     LUT6:I1->O            1   0.043   0.350  U1/x_datapath/x_ALU/ALU_Zero/o<31>1 (U1/x_datapath/x_ALU/ALU_Zero/o<31>)
+     LUT6:I5->O            1   0.043   0.350  U1/x_datapath/x_ALU/ALU_Zero/o<31>2 (U1/x_datapath/x_ALU/ALU_Zero/o<31>1)
+     LUT6:I5->O           32   0.043   0.480  U1/x_datapath/MIO_ready_PCWrite_AND_130_o_rstpot (U1/x_datapath/MIO_ready_PCWrite_AND_130_o_rstpot)
      LUT3:I2->O            1   0.043   0.000  U1/x_datapath/PC/Q_0_dpot (U1/x_datapath/PC/Q_0_dpot)
      FDCE:D                   -0.000          U1/x_datapath/PC/Q_0
     ----------------------------------------
-    Total                      5.917ns (1.076ns logic, 4.841ns route)
-                                       (18.2% logic, 81.8% route)
+    Total                      5.975ns (0.709ns logic, 5.266ns route)
+                                       (11.9% logic, 88.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'IO_clk'
@@ -1517,8 +1544,8 @@ Delay:               1.844ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE_1:C->Q           2   0.240   0.500  U7/GPIOf0_1 (U7/GPIOf0_1)
-     LUT6:I3->O            1   0.043   0.350  U4/Mmux_Cpu_data4bus36511_SW0 (N402)
-     LUT6:I5->O           33   0.043   0.625  U10/_n0095<1>11 (U10/_n0095<1>1)
+     LUT6:I3->O            1   0.043   0.350  U4/Mmux_Cpu_data4bus20411_SW0 (N345)
+     LUT6:I5->O           33   0.043   0.625  U10/_n0096<1>11 (U10/_n0096<1>1)
      LUT4:I1->O            1   0.043   0.000  U10/M0_rstpot (U10/M0_rstpot)
      FD:D                     -0.000          U10/M0
     ----------------------------------------
@@ -1541,40 +1568,40 @@ Delay:               2.221ns (Levels of Logic = 35)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              4   0.236   0.367  U10/counter0_0 (U10/counter0_0)
-     LUT1:I0->O            1   0.043   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<0>_rt (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<0>_rt)
-     MUXCY:S->O            1   0.238   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<0> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<0>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<1> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<1>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<2> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<2>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<3> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<3>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<4> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<4>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<5> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<5>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<6> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<6>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<7> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<7>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<8> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<8>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<9> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<9>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<10> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<10>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<11> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<11>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<12> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<12>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<13> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<13>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<14> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<14>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<15> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<15>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<16> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<16>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<17> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<17>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<18> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<18>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<19> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<19>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<20> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<20>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<21> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<21>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<22> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<22>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<23> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<23>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<24> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<24>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<25> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<25>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<26> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<26>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<27> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<27>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<28> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<28>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<29> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<29>)
-     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<30> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<30>)
-     MUXCY:CI->O           0   0.013   0.000  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<31> (U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_cy<31>)
-     XORCY:CI->O           1   0.262   0.613  U10/Msub_counter0[32]_GND_111_o_sub_26_OUT_xor<32> (U10/counter0[32]_GND_111_o_sub_26_OUT<32>)
+     LUT1:I0->O            1   0.043   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<0>_rt (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<0>_rt)
+     MUXCY:S->O            1   0.238   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<0> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<1> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<2> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<3> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<4> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<5> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<6> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<7> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<8> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<9> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<10> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<11> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<12> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<13> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<14> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<14>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<15> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<15>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<16> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<16>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<17> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<17>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<18> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<18>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<19> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<19>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<20> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<20>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<21> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<21>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<22> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<22>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<23> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<23>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<24> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<24>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<25> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<25>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<26> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<26>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<27> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<27>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<28> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<28>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<29> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<29>)
+     MUXCY:CI->O           1   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<30> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<30>)
+     MUXCY:CI->O           0   0.013   0.000  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<31> (U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_cy<31>)
+     XORCY:CI->O           1   0.262   0.613  U10/Msub_counter0[32]_GND_113_o_sub_26_OUT_xor<32> (U10/counter0[32]_GND_113_o_sub_26_OUT<32>)
      LUT6:I0->O            1   0.043   0.000  U10/Mmux_counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT262 (U10/counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT<32>)
      FDC:D                    -0.000          U10/counter0_32
     ----------------------------------------
@@ -1597,8 +1624,8 @@ Delay:               2.557ns (Levels of Logic = 13)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              5   0.236   0.626  U12/h_count_1 (U12/h_count_1)
-     LUT5:I0->O            4   0.043   0.367  U12/h_count[9]_PWR_112_o_equal_9_o_inv_SW0 (N105)
-     LUT6:I5->O           18   0.043   0.590  U12/h_count[9]_PWR_112_o_equal_9_o<9> (U12/h_count[9]_PWR_112_o_equal_9_o)
+     LUT5:I0->O            4   0.043   0.367  U12/h_count[9]_PWR_114_o_equal_9_o_inv_SW0 (N105)
+     LUT6:I5->O           18   0.043   0.590  U12/h_count[9]_PWR_114_o_equal_9_o<9> (U12/h_count[9]_PWR_114_o_equal_9_o)
      LUT3:I0->O            1   0.043   0.000  U12/Mcount_h_count_lut<0> (U12/Mcount_h_count_lut<0>)
      MUXCY:S->O            1   0.238   0.000  U12/Mcount_h_count_cy<0> (U12/Mcount_h_count_cy<0>)
      MUXCY:CI->O           1   0.014   0.000  U12/Mcount_h_count_cy<1> (U12/Mcount_h_count_cy<1>)
@@ -1721,7 +1748,7 @@ Offset:              2.109ns (Levels of Logic = 6)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U8/clkdiv_1'
   Total number of paths / destination ports: 404 / 14
 -------------------------------------------------------------------------
-Offset:              2.589ns (Levels of Logic = 4)
+Offset:              2.631ns (Levels of Logic = 4)
   Source:            U12/h_count_4 (FF)
   Destination:       Red<3> (PAD)
   Source Clock:      U8/clkdiv_1 rising
@@ -1731,13 +1758,13 @@ Offset:              2.589ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             13   0.236   0.681  U12/h_count_4 (U12/h_count_4)
-     LUT6:I0->O            1   0.043   0.522  U12/read3_SW0 (N466)
-     LUT6:I2->O           13   0.043   0.681  U12/read3 (U12/read3)
+     LUT6:I0->O            1   0.043   0.522  U12/read3_SW0 (N393)
+     LUT6:I2->O           21   0.043   0.724  U12/read3 (U12/read3)
      LUT6:I0->O            1   0.043   0.339  U12/Mmux_B11 (Blue_0_OBUF)
      OBUF:I->O                 0.000          Blue_0_OBUF (Blue<0>)
     ----------------------------------------
-    Total                      2.589ns (0.365ns logic, 2.224ns route)
-                                       (14.1% logic, 85.9% route)
+    Total                      2.631ns (0.365ns logic, 2.266ns route)
+                                       (13.9% logic, 86.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100MHz'
@@ -1754,7 +1781,7 @@ Offset:              5.454ns (Levels of Logic = 11)
     ----------------------------------------  ------------
      FDE:C->Q            102   0.236   0.746  SW_OK_6 (SW_OK<6>)
      end scope: 'U9:SW_OK<6>'
-     LUT5:I0->O            1   0.043   0.000  U5/MUX1_DispData/Mmux_o13_G (N477)
+     LUT5:I0->O            1   0.043   0.000  U5/MUX1_DispData/Mmux_o13_G (N404)
      MUXF7:I1->O          15   0.178   0.573  U5/MUX1_DispData/Mmux_o13 (Disp_num<30>)
      LUT6:I3->O            1   0.043   0.000  U61/M2/Mmux_Hexo_32 (U61/M2/Mmux_Hexo_32)
      MUXF7:I1->O          11   0.178   0.395  U61/M2/Mmux_Hexo_2_f7_1 (U61/Hex<2>)
@@ -1820,32 +1847,32 @@ Offset:              5.347ns (Levels of Logic = 10)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_CPU'
   Total number of paths / destination ports: 46072 / 8
 -------------------------------------------------------------------------
-Offset:              7.062ns (Levels of Logic = 13)
-  Source:            U1/x_datapath/regs/register_31_744 (FF)
-  Destination:       SEGMENT<3> (PAD)
+Offset:              7.058ns (Levels of Logic = 13)
+  Source:            U1/x_datapath/regs/register_31_745 (FF)
+  Destination:       SEGMENT<0> (PAD)
   Source Clock:      Clk_CPU rising
 
-  Data Path: U1/x_datapath/regs/register_31_744 to SEGMENT<3>
+  Data Path: U1/x_datapath/regs/register_31_745 to SEGMENT<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             3   0.236   0.625  U1/x_datapath/regs/register_31_744 (U1/x_datapath/regs/register_31_744)
-     LUT6:I0->O            1   0.043   0.522  U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_992 (U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_992)
-     LUT6:I2->O            4   0.043   0.422  U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_430 (U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_430)
-     LUT4:I2->O            6   0.043   0.631  U1/x_datapath/regs/Mmux_rdata_B311 (Data_out<8>)
-     LUT6:I1->O            1   0.043   0.000  U5/MUX1_DispData/Mmux_o_328 (U5/MUX1_DispData/Mmux_o_328)
-     MUXF7:I1->O          16   0.178   0.605  U5/MUX1_DispData/Mmux_o_2_f7_27 (Disp_num<8>)
-     LUT6:I2->O            1   0.043   0.000  U61/M2/Mmux_Hexo_4 (U61/M2/Mmux_Hexo_4)
-     MUXF7:I0->O          12   0.176   0.400  U61/M2/Mmux_Hexo_2_f7 (U61/Hex<0>)
-     INV:I->O              6   0.317   0.641  U61/M1/XLXI_4 (U61/M1/XLXN_24)
-     AND4:I0->O            2   0.043   0.527  U61/M1/XLXI_6 (U61/M1/XLXN_26)
-     OR4:I2->O             1   0.134   0.603  U61/M1/XLXI_17 (U61/M1/XLXN_208)
+     FDCE:C->Q             3   0.236   0.625  U1/x_datapath/regs/register_31_745 (U1/x_datapath/regs/register_31_745)
+     LUT6:I0->O            1   0.043   0.522  U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_995 (U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_995)
+     LUT6:I2->O            4   0.043   0.422  U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_431 (U1/x_datapath/regs/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_431)
+     LUT4:I2->O            5   0.043   0.626  U1/x_datapath/regs/Mmux_rdata_B321 (Data_out<9>)
+     LUT6:I1->O            1   0.043   0.000  U5/MUX1_DispData/Mmux_o_329 (U5/MUX1_DispData/Mmux_o_329)
+     MUXF7:I1->O          15   0.178   0.600  U5/MUX1_DispData/Mmux_o_2_f7_28 (Disp_num<9>)
+     LUT6:I2->O            1   0.043   0.000  U61/M2/Mmux_Hexo_41 (U61/M2/Mmux_Hexo_41)
+     MUXF7:I0->O          11   0.176   0.395  U61/M2/Mmux_Hexo_2_f7_0 (U61/Hex<1>)
+     INV:I->O              8   0.317   0.561  U61/M1/XLXI_3 (U61/M1/XLXN_62)
+     AND4:I2->O            2   0.134   0.500  U61/M1/XLXI_5 (U61/M1/XLXN_119)
+     OR4:I3->O             1   0.161   0.603  U61/M1/XLXI_17 (U61/M1/XLXN_208)
      OR2:I1->O             1   0.053   0.350  U61/M1/XLXI_47 (U61/SEG_TXT<0>)
      LUT3:I2->O            1   0.043   0.339  U61/MUXHM/Mmux_o1 (SEGMENT_0_OBUF)
      OBUF:I->O                 0.000          SEGMENT_0_OBUF (SEGMENT<0>)
     ----------------------------------------
-    Total                      7.062ns (1.395ns logic, 5.667ns route)
-                                       (19.8% logic, 80.2% route)
+    Total                      7.058ns (1.513ns logic, 5.545ns route)
+                                       (21.4% logic, 78.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U8/clkdiv_8'
@@ -1885,11 +1912,11 @@ Clock to Setup on destination clock Clk_CPU
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_CPU        |    5.917|         |         |         |
-U8/clkdiv_1    |    3.630|         |         |         |
-U8/clkdiv_8    |    1.507|         |         |         |
-U9/clk1        |    1.100|         |         |         |
-clk_100MHz     |    3.663|         |         |         |
+Clk_CPU        |    5.975|         |         |         |
+U8/clkdiv_1    |    3.826|         |         |         |
+U8/clkdiv_8    |    1.211|         |         |         |
+U9/clk1        |    1.045|         |         |         |
+clk_100MHz     |    4.512|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock IO_clk
@@ -1897,7 +1924,7 @@ Clock to Setup on destination clock IO_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_CPU        |    3.125|         |    2.847|         |
+Clk_CPU        |    3.172|         |    2.814|         |
 IO_clk         |    1.786|    1.844|         |         |
 U8/clkdiv_8    |    1.462|         |         |         |
 clk_100MHz     |    1.700|         |    1.092|         |
@@ -1918,8 +1945,16 @@ Clock to Setup on destination clock U2/U103/mclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_CPU        |    4.123|         |         |         |
+Clk_CPU        |    4.117|         |         |         |
 clk_100MHz     |    2.515|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U4/_n0526
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_CPU        |         |         |    0.905|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U4/_n0530
@@ -1927,7 +1962,7 @@ Clock to Setup on destination clock U4/_n0530
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_CPU        |         |         |    0.906|         |
+Clk_CPU        |         |         |    0.905|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U4/_n0534
@@ -1935,7 +1970,15 @@ Clock to Setup on destination clock U4/_n0534
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_CPU        |         |         |    0.906|         |
+Clk_CPU        |         |         |    0.905|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U4/_n0538
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_CPU        |         |         |    0.905|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U8/clkdiv_1
@@ -1974,10 +2017,12 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 Clk_CPU        |    6.578|         |         |         |
 IO_clk         |    4.864|         |         |         |
 M4/push        |    1.928|         |         |         |
-U4/_n0530      |         |    1.569|         |         |
-U4/_n0534      |         |    1.090|         |         |
+U4/_n0526      |         |    1.569|         |         |
+U4/_n0530      |         |    1.090|         |         |
+U4/_n0534      |         |    1.779|         |         |
+U4/_n0538      |         |    1.779|         |         |
 U8/clkdiv_1    |    7.200|         |         |         |
-U8/clkdiv_8    |    4.796|         |         |         |
+U8/clkdiv_8    |    4.790|         |         |         |
 U9/clk1        |    1.100|         |         |         |
 clk_100MHz     |    4.999|         |         |         |
 ---------------+---------+---------+---------+---------+
@@ -1985,14 +2030,14 @@ clk_100MHz     |    4.999|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 47.00 secs
-Total CPU time to Xst completion: 46.64 secs
+Total REAL time to Xst completion: 77.00 secs
+Total CPU time to Xst completion: 76.84 secs
  
 --> 
 
-Total memory usage is 4734688 kilobytes
+Total memory usage is 4723676 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  235 (   0 filtered)
-Number of infos    :   37 (   0 filtered)
+Number of warnings :  201 (   0 filtered)
+Number of infos    :   35 (   0 filtered)
 
